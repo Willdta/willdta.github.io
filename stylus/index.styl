@@ -1,2 +1,110 @@
-h1
-  color red
+@import './variables.styl'
+
+*
+  margin 0
+  padding 0
+  box-sizing border-box
+  text-decoration none
+  font-family $font
+  list-style none
+
+.landing-section
+  height 100vh
+  display flex
+  flex-direction column
+  justify-content space-between
+  align-items center
+
+  h1
+    font-weight $light
+    margin 50px 0
+
+  .browser-image
+    height 500px
+
+  .arrow-image
+    height 50px
+    margin 70px 0
+
+nav
+  position absolute
+  right 100px
+  top 50px
+
+  .top
+    height 20px
+
+  ul
+    li
+      text-align center
+      color black
+      padding 10px 0
+      
+      a
+        color transparent
+  
+  .bottom
+    height 20px
+    position relative
+    top -120px
+
+// Landing section media queries //
+@media only screen and (max-width 1100px)
+  .landing-section
+    h1
+      font-size 25px
+
+    .browser-image
+      height 400px
+
+    .arrow-image
+      height 30px
+      margin 30px 0
+
+    nav
+      right 70px
+      
+      .top
+        height 15px
+        position relative
+        left 50%
+        transform: translateX(-50%)
+
+      .bottom
+        height 15px
+        top -120px
+        position relative
+        left 50%
+        transform: translateX(-50%)
+
+@media only screen and (max-width 800px)
+  .landing-section
+    .browser-image
+      height 300px
+
+    nav
+      right 50px
+
+@media only screen and (max-width 600px)
+  .landing-section
+    .browser-image
+      height 200px
+    
+    nav
+      top 120px
+      left 50%
+      transform: translateX(-50%)
+
+      .top, .bottom
+        position relative
+        left 50%
+        transform: translateX(-50%)
+
+
+@media only screen and (max-width 400px)
+  .landing-section
+    h1
+      font-size 20px
+
+    .browser-image
+      height 130px

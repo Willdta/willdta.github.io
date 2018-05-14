@@ -1,3 +1,108 @@
-h1 {
-  color: #f00;
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'quicksand';
+  list-style: none;
+}
+.landing-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.landing-section h1 {
+  font-weight: 300;
+  margin: 50px 0;
+}
+.landing-section .browser-image {
+  height: 500px;
+}
+.landing-section .arrow-image {
+  height: 50px;
+  margin: 70px 0;
+}
+nav {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+}
+nav .top {
+  height: 20px;
+}
+nav ul li {
+  text-align: center;
+  color: #000;
+  padding: 10px 0;
+}
+nav ul li a {
+  color: transparent;
+}
+nav .bottom {
+  height: 20px;
+  position: relative;
+  top: -120px;
+}
+@media only screen and (max-width: 1100px) {
+  .landing-section h1 {
+    font-size: 25px;
+  }
+  .landing-section .browser-image {
+    height: 400px;
+  }
+  .landing-section .arrow-image {
+    height: 30px;
+    margin: 30px 0;
+  }
+  .landing-section nav {
+    right: 70px;
+  }
+  .landing-section nav .top {
+    height: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .landing-section nav .bottom {
+    height: 15px;
+    top: -120px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .landing-section .browser-image {
+    height: 300px;
+  }
+  .landing-section nav {
+    right: 50px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .landing-section .browser-image {
+    height: 200px;
+  }
+  .landing-section nav {
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .landing-section nav .top,
+  .landing-section nav .bottom {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 400px) {
+  .landing-section h1 {
+    font-size: 20px;
+  }
+  .landing-section .browser-image {
+    height: 130px;
+  }
 }
