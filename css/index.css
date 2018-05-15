@@ -8,7 +8,7 @@
   list-style: none;
 }
 .landing-section {
-  height: 100vh;
+  height: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,14 +16,15 @@
 }
 .landing-section h1 {
   font-weight: 300;
-  margin: 50px 0;
+  margin-top: 50px;
 }
 .landing-section .browser-image {
   height: 500px;
+  margin: 20px 0;
 }
 .landing-section .arrow-image {
-  height: 50px;
-  margin: 70px 0;
+  height: 30px;
+  margin-bottom: 50px;
 }
 nav {
   position: absolute;
@@ -54,7 +55,6 @@ nav .bottom {
     height: 400px;
   }
   .landing-section .arrow-image {
-    height: 30px;
     margin: 30px 0;
   }
   .landing-section nav {
@@ -83,11 +83,15 @@ nav .bottom {
   }
 }
 @media only screen and (max-width: 600px) {
+  .landing-section {
+    justify-content: center;
+  }
   .landing-section .browser-image {
     height: 200px;
+    margin: 100px 0;
   }
   .landing-section nav {
-    top: 120px;
+    top: 50px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -99,10 +103,49 @@ nav .bottom {
   }
 }
 @media only screen and (max-width: 400px) {
+  .landing-section .browser-image {
+    margin: 150px 0;
+  }
   .landing-section h1 {
     font-size: 20px;
   }
   .landing-section .browser-image {
     height: 130px;
   }
+}
+.skills-section {
+  height: 1300px;
+  position: relative;
+}
+.skills-section h1 {
+  font-size: 77px;
+  text-align: center;
+  padding-top: 100px;
+  font-weight: 500;
+}
+.skills-section h3 {
+  font-size: 40px;
+  text-align: center;
+  color: #a2a2a2;
+  font-weight: 400;
+}
+.skills-section h3 span {
+  color: #0ba300;
+}
+.skills-section .skills-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.skills-section .skills-container .skills-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-section .skills-container .skills-row p {
+  padding: 60px 90px;
+  font-size: 25px;
+  color: #a2a2a2;
+  font-weight: 300;
 }

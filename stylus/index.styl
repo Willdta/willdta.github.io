@@ -8,8 +8,9 @@
   font-family $font
   list-style none
 
+// Landing //
 .landing-section
-  height 100vh
+  height 1000px
   display flex
   flex-direction column
   justify-content space-between
@@ -17,14 +18,15 @@
 
   h1
     font-weight $light
-    margin 50px 0
+    margin-top 50px
 
   .browser-image
     height 500px
+    margin 20px 0
 
   .arrow-image
-    height 50px
-    margin 70px 0
+    height 30px
+    margin-bottom 50px
 
 nav
   position absolute
@@ -58,7 +60,6 @@ nav
       height 400px
 
     .arrow-image
-      height 30px
       margin 30px 0
 
     nav
@@ -87,11 +88,14 @@ nav
 
 @media only screen and (max-width 600px)
   .landing-section
+    justify-content center
+
     .browser-image
       height 200px
+      margin 100px 0
     
     nav
-      top 120px
+      top 50px
       left 50%
       transform: translateX(-50%)
 
@@ -103,8 +107,48 @@ nav
 
 @media only screen and (max-width 400px)
   .landing-section
+    .browser-image
+      margin 150px 0
+
     h1
       font-size 20px
 
     .browser-image
       height 130px
+
+// Skills Section //
+.skills-section
+  height 1300px
+  position relative
+
+  h1
+    font-size 77px
+    text-align center
+    padding-top 100px
+    font-weight: $medium
+
+  h3
+    font-size: 40px
+    text-align center
+    color #A2A2A2
+    font-weight: $regular
+
+    span
+      color #0BA300
+
+  .skills-container
+    position absolute
+    top 50%
+    left 50%
+    transform: translate(-50%, -50%)
+    
+    .skills-row 
+      display flex
+      justify-content center
+      align-items center
+
+      p
+        padding 60px 90px
+        font-size 25px
+        color #A2A2A2
+        font-weight $light
