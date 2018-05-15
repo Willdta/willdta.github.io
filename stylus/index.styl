@@ -152,3 +152,175 @@ nav
         font-size 25px
         color #A2A2A2
         font-weight $light
+        text-align center
+
+// Skills Section Media Queries //
+@media only screen and (max-width 1100px)
+  .skills-section
+    h1
+      font-size: 50px
+
+    h3
+      font-size 30px
+    
+    .skills-container
+      .skills-row 
+          p
+            font-size: 20px
+            padding 50px 70px
+
+@media only screen and (max-width 800px)
+  .skills-section
+    h1
+      font-size: 40px
+
+    h3
+      font-size 25px
+    
+    .skills-container
+      .skills-row 
+          p
+            font-size: 15px
+            padding 50px 40px
+
+@media only screen and (max-width 500px)
+  .skills-section
+    .skills-container
+      .skills-row 
+          p
+            font-size 15px
+            padding 50px 20px
+
+@media only screen and (max-width 340px)
+  .skills-section
+    height 1100px
+    .skills-container
+      .skills-row 
+          p
+            font-size 15px
+            padding 50px 10px
+
+.project-section
+  // background red
+  height 1200px
+
+  h1
+    font-size 77px
+    font-weight $medium
+    text-align center
+  
+  h3 
+    font-size 40px
+    color: #a2a2a2
+    font-weight $regular
+    text-align center
+    padding-bottom 100px 
+
+    span
+      color #FF9E9E
+
+  .project-row-container
+    height 90vh
+    // background yellow
+    display flex
+    justify-content space-around
+    flex-wrap wrap
+    align-items center
+    
+    .project-row
+      // background blue
+      display flex
+      justify-content space-around
+      align-items: center
+      flex-direction column
+      padding 0 10px
+      height 350px
+      width 500px
+
+      h4
+        font-size: 24px
+        color #a2a2a2
+        font-weight $light
+
+      p
+        color #a2a2a2
+        font-weight $light
+
+      .project-links
+        display flex
+
+        .github-logo, .web-logo
+          height 50px
+          padding 0 20px
+
+      .more-arrow
+        height 30px
+
+// Project Section Media Queries //
+@media only screen and (max-width 1520px)
+  .project-section
+    .project-row-container
+      .project-row
+        // background green
+        width 400px
+
+@media only screen and (max-width 1100px)
+  .project-section
+    h1
+      font-size: 50px
+
+    h3
+      font-size 30px
+
+@media only screen and (max-width 1220px)
+  .project-section
+    height 1350px
+    .project-row-container
+      .project-row
+        // background green
+        width 350px
+
+@media only screen and (max-width 800px)
+ .project-section
+    h1
+      font-size: 40px
+
+    h3
+      font-size 25px
+
+@media only screen and (max-width 720px)
+  .project-section
+    .project-row-container
+      .project-row
+        // background green
+        width 250px
+
+@media only screen and (max-width 720px)
+  .project-section
+    height 2200px
+    .project-row-container
+      .project-row
+        // background green
+        width 350px
+        height 300px
+
+@media only screen and (max-width 450px)
+  .project-section
+    h1
+      font-size: 30px
+    h3
+      font-size 20px
+
+    .project-row-container
+      .project-row
+        h4
+          font-size 19px
+        p
+          font-size 13px
+
+        .project-links
+          .github-logo, .web-logo
+              height 40px
+
+.about-section
+  background red
