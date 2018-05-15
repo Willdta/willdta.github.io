@@ -323,4 +323,97 @@ nav
               height 40px
 
 .about-section
-  background red
+  // background red
+  height 1400px
+  margin-top 200px
+
+  h1
+    text-align  center
+    font-size 77px
+    font-weight $medium
+  h3
+    text-align center
+    padding-bottom 100px
+    font-size 40px
+    font-weight $regular
+    color #a2a2a2
+
+    span
+      color #6186FF
+
+  p
+    text-align center
+    padding 0 250px
+    line-height: 40px
+    font-size: 22px
+    font-weight: $light
+    color #a2a2a2
+
+    span
+      color #6186ff
+  
+  .connect-links
+    display:  flex
+    justify-content: center
+    img
+      height 80px
+      margin-top 50px
+      padding 0 30px
+
+// About Section Media Queries
+@media only screen and (max-width 1100px)
+  .about-section
+    h1
+      font-size: 50px
+    h3
+      font-size: 30px
+
+    p
+      font-size: 20px
+      padding 0 190px
+
+@media only screen and (max-width 800px)
+  .about-section
+    h1
+      font-size: 40px
+    h3
+      font-size: 25px
+
+    p
+      padding 0 100px
+    
+    .connect-links
+      img
+        height 60px
+
+@media only screen and (max-width 450px)
+  .about-section
+    h1
+      font-size: 30px
+    h3
+      font-size: 20px
+
+    p
+      padding 0 50px
+      font-size: 18px
+
+    .connect-links
+      img
+        height 40px
+
+footer
+  p
+    text-align center
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-bottom 50px
+    color #a2a2a2
+
+    img
+      height 20px
+      padding 0 10px
+    
+    span
+      color #FF8C7E
+      padding-left: 10px
