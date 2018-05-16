@@ -6,8 +6,9 @@ bottomArr.addEventListener('click', () => {
   
   if (bottomArr.classList.contains('bottom-transform')) {
     setTimeout(() => {
-      menuItems.forEach(item => item.classList.toggle('menu-toggle'))
-    }, 1000)
+      menuItems.forEach(item =>
+        item.classList.toggle('menu-toggle'))
+    }, 800)
   } else {
     menuItems.forEach(item => item.classList.toggle('menu-toggle'))
   }

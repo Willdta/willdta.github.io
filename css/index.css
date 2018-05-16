@@ -11,58 +11,30 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 .landing-section h1 {
   font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #a2a2a2;
+}
+.landing-section h1 span {
+  color: #000;
+}
+.landing-section ul {
+  display: flex;
+  margin-bottom: 20px;
   margin-top: 50px;
 }
+.landing-section ul li>a {
+  padding: 20px;
+  color: #a2a2a2;
+}
 .landing-section .browser-image {
-  height: 500px;
+  height: 400px;
   margin: 20px 0;
-}
-.landing-section .arrow-image {
-  height: 30px;
-  margin-bottom: 50px;
-}
-nav {
-  position: absolute;
-  right: 100px;
-  top: 50px;
-}
-nav .top {
-  height: 20px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-}
-nav ul li {
-  text-align: center;
-  color: #000;
-  padding: 10px 0;
-}
-nav ul li .menu {
-  color: #000;
-  opacity: 0;
-  pointer-events: none;
-  text-align: center;
-  transition: all 400ms ease;
-}
-nav ul li .menu-toggle {
-  opacity: 1;
-  pointer-events: all;
-}
-nav .bottom {
-  height: 20px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  top: -120px;
-  transition: all 1000ms ease;
-}
-nav .bottom-transform {
-  top: 3px;
 }
 @media only screen and (max-width: 1100px) {
   .landing-section h1 {
@@ -71,32 +43,10 @@ nav .bottom-transform {
   .landing-section .browser-image {
     height: 400px;
   }
-  .landing-section .arrow-image {
-    margin: 30px 0;
-  }
-  .landing-section nav {
-    right: 70px;
-  }
-  .landing-section nav .top {
-    height: 15px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .landing-section nav .bottom {
-    height: 15px;
-    top: -120px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
 }
 @media only screen and (max-width: 800px) {
   .landing-section .browser-image {
     height: 300px;
-  }
-  .landing-section nav {
-    right: 50px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -105,64 +55,49 @@ nav .bottom-transform {
   }
   .landing-section .browser-image {
     height: 200px;
-    margin: 100px 0;
-  }
-  .landing-section nav {
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .landing-section nav .top,
-  .landing-section nav .bottom {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
   }
 }
 @media only screen and (max-width: 400px) {
-  .landing-section nav {
-    top: 30px;
-  }
-  .landing-section .browser-image {
-    margin: 150px 0;
-  }
   .landing-section h1 {
     font-size: 20px;
+  }
+  .landing-section ul>li>a {
+    font-size: 14px;
   }
   .landing-section .browser-image {
     height: 130px;
   }
 }
-.skills-section {
+#skills-section {
   max-height: 1200px;
   position: relative;
 }
-.skills-section h1 {
+#skills-section h1 {
   font-size: 77px;
   text-align: center;
   padding-top: 150px;
-  font-weight: 400;
+  font-weight: 500;
 }
-.skills-section h3 {
+#skills-section h3 {
   font-size: 40px;
   text-align: center;
   color: #a2a2a2;
   font-weight: 400;
   padding-bottom: 100px;
 }
-.skills-section h3 span {
+#skills-section h3 span {
   color: #0ba300;
 }
-.skills-section .skills-container {
+#skills-section .skills-container {
   position: relative;
   top: 10%;
 }
-.skills-section .skills-row {
+#skills-section .skills-row {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.skills-section .skills-row p {
+#skills-section .skills-row p {
   padding: 60px 90px;
   font-size: 25px;
   color: #a2a2a2;
@@ -170,76 +105,76 @@ nav .bottom-transform {
   text-align: center;
 }
 @media only screen and (max-width: 1100px) {
-  .skills-section h1 {
+  #skills-section h1 {
     font-size: 50px;
   }
-  .skills-section h3 {
+  #skills-section h3 {
     font-size: 30px;
   }
-  .skills-section .skills-container .skills-row p {
+  #skills-section .skills-container .skills-row p {
     font-size: 20px;
     padding: 50px 70px;
   }
 }
 @media only screen and (max-width: 800px) {
-  .skills-section h1 {
+  #skills-section h1 {
     font-size: 40px;
   }
-  .skills-section h3 {
+  #skills-section h3 {
     font-size: 25px;
   }
-  .skills-section .skills-container .skills-row p {
+  #skills-section .skills-container .skills-row p {
     font-size: 15px;
     padding: 50px 40px;
   }
 }
 @media only screen and (max-width: 500px) {
-  .skills-section .skills-container .skills-row p {
+  #skills-section .skills-container .skills-row p {
     font-size: 15px;
     padding: 50px 20px;
   }
 }
 @media only screen and (max-width: 450px) {
-  .skills-section h1 {
+  #skills-section h1 {
     font-size: 30px;
   }
-  .skills-section h3 {
+  #skills-section h3 {
     font-size: 20px;
   }
 }
 @media only screen and (max-width: 340px) {
-  .skills-section .skills-container .skills-row p {
+  #skills-section .skills-container .skills-row p {
     font-size: 15px;
     padding: 50px 10px;
   }
 }
-.project-section {
+#project-section {
   height: 1400px;
 }
-.project-section h1 {
+#project-section h1 {
   font-size: 77px;
-  font-weight: 400;
+  font-weight: 500;
   text-align: center;
   padding-top: 200px;
 }
-.project-section h3 {
+#project-section h3 {
   font-size: 40px;
   color: #a2a2a2;
   font-weight: 400;
   text-align: center;
   padding-bottom: 100px;
 }
-.project-section h3 span {
+#project-section h3 span {
   color: #ff9e9e;
 }
-.project-section .project-row-container {
+#project-section .project-row-container {
   height: 90vh;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
 }
-.project-section .project-row-container .project-row {
+#project-section .project-row-container .project-row {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -248,163 +183,163 @@ nav .bottom-transform {
   height: 350px;
   width: 500px;
 }
-.project-section .project-row-container .project-row h4 {
+#project-section .project-row-container .project-row h4 {
   font-size: 24px;
   color: #a2a2a2;
   font-weight: 300;
 }
-.project-section .project-row-container .project-row p {
+#project-section .project-row-container .project-row p {
   color: #a2a2a2;
   font-weight: 300;
+  text-align: center;
 }
-.project-section .project-row-container .project-row .project-links {
+#project-section .project-row-container .project-row .project-links {
   display: flex;
 }
-.project-section .project-row-container .project-row .project-links .github-logo,
-.project-section .project-row-container .project-row .project-links .web-logo {
+#project-section .project-row-container .project-row .project-links .github-logo,
+#project-section .project-row-container .project-row .project-links .web-logo {
   height: 50px;
   padding: 0 20px;
 }
-.project-section .project-row-container .project-row .more-arrow {
+#project-section .project-row-container .project-row .more-arrow {
   height: 30px;
 }
 @media only screen and (max-width: 1520px) {
-  .project-section .project-row-container .project-row {
+  #project-section .project-row-container .project-row {
     width: 400px;
   }
 }
 @media only screen and (max-width: 1100px) {
-  .project-section h1 {
+  #project-section h1 {
     font-size: 50px;
   }
-  .project-section h3 {
+  #project-section h3 {
     font-size: 30px;
   }
 }
 @media only screen and (max-width: 1220px) {
-  .project-section .project-row-container .project-row {
+  #project-section .project-row-container .project-row {
     width: 350px;
   }
 }
 @media only screen and (max-width: 800px) {
-  .project-section h1 {
+  #project-section h1 {
     font-size: 40px;
   }
-  .project-section h3 {
+  #project-section h3 {
     font-size: 25px;
   }
 }
 @media only screen and (max-width: 720px) {
-  .project-section .project-row-container .project-row {
+  #project-section .project-row-container .project-row {
     width: 250px;
   }
 }
 @media only screen and (max-width: 720px) {
-  .project-section {
+  #project-section {
     height: 2200px;
   }
-  .project-section .project-row-container .project-row {
+  #project-section .project-row-container .project-row {
     width: 350px;
     height: 300px;
   }
 }
 @media only screen and (max-width: 450px) {
-  .project-section h1 {
+  #project-section h1 {
     font-size: 30px;
   }
-  .project-section h3 {
+  #project-section h3 {
     font-size: 20px;
   }
-  .project-section .project-row-container .project-row h4 {
+  #project-section .project-row-container .project-row h4 {
     font-size: 19px;
   }
-  .project-section .project-row-container .project-row p {
-    font-size: 13px;
+  #project-section .project-row-container .project-row p {
+    font-size: 15px;
   }
-  .project-section .project-row-container .project-row .project-links .github-logo,
-  .project-section .project-row-container .project-row .project-links .web-logo {
+  #project-section .project-row-container .project-row .project-links .github-logo,
+  #project-section .project-row-container .project-row .project-links .web-logo {
     height: 40px;
   }
 }
-.about-section {
+#about-section {
   max-height: 3700px;
   margin-bottom: 200px;
 }
-.about-section h1 {
+#about-section h1 {
   text-align: center;
   font-size: 77px;
-  font-weight: 400;
+  font-weight: 500;
   padding-top: 30px;
 }
-.about-section h3 {
+#about-section h3 {
   text-align: center;
   padding-bottom: 100px;
   font-size: 40px;
   font-weight: 400;
   color: #a2a2a2;
 }
-.about-section h3 span {
+#about-section h3 span {
   color: #6186ff;
 }
-.about-section p {
+#about-section p {
   text-align: center;
   padding: 0 250px;
   line-height: 40px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   color: #a2a2a2;
 }
-.about-section p span {
+#about-section p span {
   color: #6186ff;
 }
-.about-section .connect-links {
+#about-section .connect-links {
   display: flex;
   justify-content: center;
 }
-.about-section .connect-links img {
+#about-section .connect-links img {
   height: 80px;
   margin-top: 50px;
   padding: 0 30px;
 }
 @media only screen and (max-width: 1100px) {
-  .about-section h1 {
+  #about-section h1 {
     font-size: 50px;
     padding-top: 200px;
   }
-  .about-section h3 {
+  #about-section h3 {
     font-size: 30px;
   }
-  .about-section p {
-    font-size: 20px;
+  #about-section p {
     padding: 0 190px;
   }
 }
 @media only screen and (max-width: 800px) {
-  .about-section h1 {
+  #about-section h1 {
     font-size: 40px;
   }
-  .about-section h3 {
+  #about-section h3 {
     font-size: 25px;
   }
-  .about-section p {
+  #about-section p {
     padding: 0 100px;
   }
-  .about-section .connect-links img {
+  #about-section .connect-links img {
     height: 60px;
   }
 }
 @media only screen and (max-width: 450px) {
-  .about-section h1 {
+  #about-section h1 {
     font-size: 30px;
   }
-  .about-section h3 {
+  #about-section h3 {
     font-size: 20px;
   }
-  .about-section p {
+  #about-section p {
     padding: 0 50px;
-    font-size: 18px;
+    font-size: 15px;
   }
-  .about-section .connect-links img {
+  #about-section .connect-links img {
     height: 40px;
     padding: 0 20px;
   }
@@ -416,6 +351,7 @@ footer p {
   align-items: center;
   margin-bottom: 50px;
   color: #a2a2a2;
+  font-size: 10px;
 }
 footer p img {
   height: 20px;
@@ -426,7 +362,7 @@ footer p span {
   padding-left: 10px;
 }
 @media only screen and (max-width: 1000px) {
-  .about-section {
+  #about-section {
     margin-bottom: 200px;
   }
 }

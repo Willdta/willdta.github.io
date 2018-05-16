@@ -8,22 +8,21 @@ html(lang="en")
     title gpdesign
   body
     .landing-section
-      h1 gabrielpozo dev / design
-      img.browser-image(src="./images/home-page.svg", alt="")
-      img.arrow-image(src="../images/landing-arrows.svg", alt="") 
+      h1 gabrielpozo dev 
+        span / 
+        | design
+      img.browser-image(src="./images/home-page-grey.svg", alt="")
+      ul
+        span {
+        li  
+          a.menu(href="#skills-section") skills 
+        li
+          a.menu(href="#project-section") projects
+        li
+          a.menu(href="#about-section") about
+        span }
 
-      nav
-        img.top(src="../images/top.svg", alt="")
-        ul
-          li  
-            a.menu(href="#") skills 
-          li
-            a.menu(href="#") projects
-          li
-            a.menu(href="#") about
-        img.bottom(src="../images/bottom-bracket-updated.svg", alt="")
-    
-    .skills-section.section-header
+    #skills-section
       h1 skills
       h3
         span return
@@ -53,7 +52,7 @@ html(lang="en")
           p adobe xd
           p adobe illustrator
     
-    .project-section
+    #project-section
       h1 projects
       h3
         span return
@@ -68,6 +67,7 @@ html(lang="en")
               img.github-logo(src="../images/github-logo.svg", alt="")
             a(href="https://devsocial123.herokuapp.com/")
               img.web-logo(src="../images/internet.svg", alt="")
+        
         .project-row
           h4 expense report
           p an application built to track your expenses
@@ -76,6 +76,7 @@ html(lang="en")
               img.github-logo(src="../images/github-logo.svg", alt="")
             a(href="https://expense-report1234.herokuapp.com/")
               img.web-logo(src="../images/internet.svg", alt="")
+        
         .project-row
           h4 hamster ninja
           p a 2d top-down puzzle game
@@ -84,12 +85,14 @@ html(lang="en")
               img.github-logo(src="../images/github-logo.svg", alt="")
             a(href="http://hamsterninja.ca/")            
               img.web-logo(src="../images/internet.svg", alt="")
+        
         .project-row
           h4 fitness website
           p an online coaching fitness site 
           .project-links
             a(href="http://beyondufit.org/")            
               img.web-logo(src="../images/internet.svg", alt="")
+        
         .project-row
           h4 food-order-app
           p a food ordering app with notifications
@@ -105,7 +108,7 @@ html(lang="en")
           a(href="https://github.com/Willdta")          
             img.more-arrow(src="../images/down-arrow-updated.svg", alt="")
 
-    .about-section.section-header
+    #about-section
       h1 about me
       h3
         span return
@@ -161,4 +164,3 @@ html(lang="en")
       | by gabriel pozo
 
   script(src="./js/main.js")
-  

@@ -8,67 +8,37 @@
   font-family $font
   list-style none
 
-// Landing //
+// Landing Section Styling //
 .landing-section
   height 100vh
   display flex
   flex-direction column
-  justify-content space-between
+  justify-content space-around
   align-items center
 
   h1
     font-weight $light
-    margin-top 50px
-
-  .browser-image
-    height 500px
-    margin 20px 0
-
-  .arrow-image
-    height 30px
+    margin-top 20px
     margin-bottom 50px
+    color $grey
 
-nav
-  position absolute
-  right 100px
-  top 50px
-
-  .top
-    height 20px
-    position relative
-    left 50%
-    transform: translateX(-50%)
+    span
+      color black
 
   ul
-    li
-      text-align center
-      color black
-      padding 10px 0
-      
-      .menu
-        color:black
-        opacity 0
-        pointer-events: none
-        // color transparent
-        text-align: center
-        transition: all 400ms ease
+    display flex
+    margin-bottom 20px
+    margin-top 50px
 
-      .menu-toggle
-        opacity 1
-        pointer-events: all
+    li>a
+      padding 20px
+      color $grey
 
-  .bottom
-    height 20px
-    position relative
-    left 50%
-    transform: translateX(-50%)
-    top -120px
-    transition: all 1000ms ease
+  .browser-image
+    height 400px
+    margin 20px 0
 
-  .bottom-transform
-    top 3px
-
-// Landing section media queries //
+// Landing Section Media Queries //
 @media only screen and (max-width 1100px)
   .landing-section
     h1
@@ -77,32 +47,10 @@ nav
     .browser-image
       height 400px
 
-    .arrow-image
-      margin 30px 0
-
-    nav
-      right 70px
-      
-      .top
-        height 15px
-        position relative
-        left 50%
-        transform: translateX(-50%)
-
-      .bottom
-        height 15px
-        top -120px
-        position relative
-        left 50%
-        transform: translateX(-50%)
-
 @media only screen and (max-width 800px)
   .landing-section
     .browser-image
       height 300px
-
-    nav
-      right 50px
 
 @media only screen and (max-width 600px)
   .landing-section
@@ -110,38 +58,22 @@ nav
 
     .browser-image
       height 200px
-      margin 100px 0
-    
-    nav
-      top 50px
-      left 50%
-      transform: translateX(-50%)
-
-      .top, .bottom
-        position relative
-        left 50%
-        transform: translateX(-50%)
-
 
 @media only screen and (max-width 400px)
   .landing-section
-    nav
-      top 30px
-
-    .browser-image
-      margin 150px 0
-
     h1
       font-size 20px
+
+    ul>li>a
+      font-size: 14px
 
     .browser-image
       height 130px
 
-// Skills Section //
-.skills-section
+// Skills Section Styling //
+#skills-section
   max-height 1200px
   position relative
-  // background red
 
   h1
     font-size 77px
@@ -152,20 +84,16 @@ nav
   h3
     font-size: 40px
     text-align center
-    color #A2A2A2
+    color $grey
     font-weight: $regular
     padding-bottom 100px
 
     span
-      color #0BA300
+      color $green
 
   .skills-container
       position relative
       top 10%
-    // position absolute
-    // top 50%
-    // left 50%
-    // transform: translate(-50%, -50%)
     
     .skills-row 
       display flex
@@ -175,13 +103,13 @@ nav
       p
         padding 60px 90px
         font-size 25px
-        color #A2A2A2
+        color $grey
         font-weight $light
         text-align center
 
 // Skills Section Media Queries //
 @media only screen and (max-width 1100px)
-  .skills-section
+  #skills-section
     h1
       font-size: 50px
 
@@ -195,8 +123,7 @@ nav
             padding 50px 70px
 
 @media only screen and (max-width 800px)
-  .skills-section
-    // height 0px
+  #skills-section
     h1
       font-size: 40px
 
@@ -210,7 +137,7 @@ nav
             padding 50px 40px
 
 @media only screen and (max-width 500px)
-  .skills-section
+  #skills-section
     .skills-container
       .skills-row 
           p
@@ -218,24 +145,22 @@ nav
             padding 50px 20px
 
 @media only screen and (max-width 450px)
-  .skills-section
+  #skills-section
     h1
       font-size: 30px
     h3
       font-size 20px
 
 @media only screen and (max-width 340px)
-  .skills-section
-    // height 900px
+  #skills-section
     .skills-container
       .skills-row 
           p
             font-size 15px
             padding 50px 10px
 
-.project-section
-  // margin-top 200px
-  // background red
+// Project Section Styling //
+#project-section
   height 1400px
 
   h1
@@ -246,24 +171,22 @@ nav
   
   h3 
     font-size 40px
-    color: #a2a2a2
+    color: $grey
     font-weight $regular
     text-align center
     padding-bottom 100px 
 
     span
-      color #FF9E9E
+      color $pink
 
   .project-row-container
     height 90vh
-    // background yellow
     display flex
     justify-content space-around
     flex-wrap wrap
     align-items center
     
     .project-row
-      // background blue
       display flex
       justify-content space-around
       align-items: center
@@ -274,12 +197,13 @@ nav
 
       h4
         font-size: 24px
-        color #a2a2a2
+        color $grey
         font-weight $light
 
       p
-        color #a2a2a2
+        color $grey
         font-weight $light
+        text-align: center
 
       .project-links
         display flex
@@ -293,14 +217,13 @@ nav
 
 // Project Section Media Queries //
 @media only screen and (max-width 1520px)
-  .project-section
+  #project-section
     .project-row-container
       .project-row
-        // background green
         width 400px
 
 @media only screen and (max-width 1100px)
-  .project-section
+  #project-section
     h1
       font-size: 50px
 
@@ -308,15 +231,13 @@ nav
       font-size 30px
 
 @media only screen and (max-width 1220px)
-  .project-section
-    // height 1300px
+  #project-section
     .project-row-container
       .project-row
-        // background green
         width 350px
 
 @media only screen and (max-width 800px)
- .project-section
+ #project-section
     h1
       font-size: 40px
 
@@ -324,24 +245,21 @@ nav
       font-size 25px
 
 @media only screen and (max-width 720px)
-  .project-section
+  #project-section
     .project-row-container
       .project-row
-        // background green
         width 250px
 
 @media only screen and (max-width 720px)
-  .project-section
+  #project-section
     height 2200px
     .project-row-container
       .project-row
-        // background green
         width 350px
         height 300px
 
 @media only screen and (max-width 450px)
-  .project-section
-    // height 400px
+  #project-section
     h1
       font-size: 30px
     h3
@@ -352,14 +270,13 @@ nav
         h4
           font-size 19px
         p
-          font-size 13px
+          font-size 15px
 
         .project-links
           .github-logo, .web-logo
               height 40px
 
-.about-section
-  // background red
+#about-section
   max-height 3700px
   margin-bottom 200px
 
@@ -373,21 +290,21 @@ nav
     padding-bottom 100px
     font-size 40px
     font-weight $regular
-    color #a2a2a2
+    color $grey
 
     span
-      color #6186FF
+      color $blue
 
   p
     text-align center
     padding 0 250px
     line-height: 40px
-    font-size: 22px
+    font-size: 18px
     font-weight: $light
-    color #a2a2a2
+    color $grey
 
     span
-      color #6186ff
+      color $blue
   
   .connect-links
     display:  flex
@@ -397,9 +314,9 @@ nav
       margin-top 50px
       padding 0 30px
 
-// About Section Media Queries
+// About Section Media Queries //
 @media only screen and (max-width 1100px)
-  .about-section
+  #about-section
     h1
       font-size: 50px
       padding-top 200px
@@ -407,13 +324,10 @@ nav
       font-size: 30px
 
     p
-      font-size: 20px
       padding 0 190px
 
 @media only screen and (max-width 800px)
-  .about-section
-    // height 1500px
-
+  #about-section
     h1
       font-size: 40px
     h3
@@ -427,7 +341,7 @@ nav
         height 60px
 
 @media only screen and (max-width 450px)
-  .about-section
+  #about-section
     h1
       font-size: 30px
     h3
@@ -435,13 +349,14 @@ nav
 
     p
       padding 0 50px
-      font-size: 18px
+      font-size: 15px
 
     .connect-links
       img
         height 40px
         padding 0 20px
 
+// Footer Section Styling //
 footer
   p
     text-align center
@@ -449,17 +364,18 @@ footer
     justify-content: center
     align-items: center
     margin-bottom 50px
-    color #a2a2a2
+    color $grey
+    font-size: 10px
 
     img
       height 20px
       padding 0 10px
     
     span
-      color #FF8C7E
+      color $heart
       padding-left: 10px
 
+// Footer Section Media Queries //
 @media only screen and (max-width 1000px)
-  .about-section
-    // background red
+  #about-section
     margin-bottom 200px
