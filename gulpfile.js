@@ -7,7 +7,7 @@ gulp.task('browserSync', ['stylus', 'pug', 'js'], () => {
   browserSync.init({
     server: {
       baseDir: './',
-      index: './html/index.html'
+      index: './index.html'
     }
   })
 })
@@ -24,7 +24,7 @@ gulp.task('pug', () => {
     .pipe(pug({
       pretty: true
     }))
-    .pipe(gulp.dest('./html'))
+    .pipe(gulp.dest('./'))
 })
 
 gulp.task('js', () => {
@@ -37,7 +37,7 @@ gulp.task('watch', ['browserSync'], () => {
   gulp.watch('./pug/*.pug', ['pug'])
   gulp.watch('./stylus/*.styl', ['stylus'])
   gulp.watch('./js/*.js', ['js'])
-  gulp.watch('./html/*.html').on('change', browserSync.reload)
+  gulp.watch('./*.html').on('change', browserSync.reload)
 })
 
 gulp.task('default', ['stylus', 'pug', 'js', 'watch'])
