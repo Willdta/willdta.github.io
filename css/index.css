@@ -112,8 +112,8 @@
     font-size: 30px;
   }
   #skills-section .skills-container .skills-row p {
-    font-size: 20px;
-    padding: 50px 70px;
+    font-size: 18px;
+    padding: 50px 60px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -125,7 +125,7 @@
   }
   #skills-section .skills-container .skills-row p {
     font-size: 15px;
-    padding: 50px 40px;
+    padding: 50px 36px;
   }
 }
 @media only screen and (max-width: 500px) {
@@ -140,6 +140,9 @@
   }
   #skills-section h3 {
     font-size: 20px;
+  }
+  #skills-section .skills-container .skills-row p {
+    padding: 50px 16px;
   }
 }
 @media only screen and (max-width: 340px) {
@@ -289,6 +292,9 @@
   font-size: 18px;
   font-weight: 300;
   color: #a2a2a2;
+}
+#about-section p a {
+  color: #6186ff;
 }
 #about-section p span {
   color: #6186ff;
