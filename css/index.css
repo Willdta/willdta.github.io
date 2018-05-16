@@ -42,16 +42,27 @@ nav ul li {
   color: #000;
   padding: 10px 0;
 }
-nav ul li a {
+nav ul li .menu {
   color: #000;
-  display: none;
+  opacity: 0;
+  pointer-events: none;
+  text-align: center;
+  transition: all 400ms ease;
+}
+nav ul li .menu-toggle {
+  opacity: 1;
+  pointer-events: all;
 }
 nav .bottom {
   height: 20px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  top: -55px;
+  top: -120px;
+  transition: all 1000ms ease;
+}
+nav .bottom-transform {
+  top: 3px;
 }
 @media only screen and (max-width: 1100px) {
   .landing-section h1 {
@@ -130,7 +141,7 @@ nav .bottom {
   font-size: 77px;
   text-align: center;
   padding-top: 150px;
-  font-weight: 500;
+  font-weight: 400;
 }
 .skills-section h3 {
   font-size: 40px;
@@ -207,7 +218,7 @@ nav .bottom {
 }
 .project-section h1 {
   font-size: 77px;
-  font-weight: 500;
+  font-weight: 400;
   text-align: center;
   padding-top: 200px;
 }
@@ -322,7 +333,7 @@ nav .bottom {
 .about-section h1 {
   text-align: center;
   font-size: 77px;
-  font-weight: 500;
+  font-weight: 400;
   padding-top: 30px;
 }
 .about-section h3 {
