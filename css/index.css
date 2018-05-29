@@ -72,26 +72,10 @@
   height: 1450px;
 }
 #skills-section h1 {
-  font-size: 77px;
-  text-align: center;
   padding-top: 150px;
-  font-weight: 500;
 }
 #skills-section h1:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  font-size: 35px;
-  vertical-align: middle;
-  content: "\f111";
-  margin-right: 40px;
   color: #0ba300;
-}
-#skills-section h3 {
-  font-size: 40px;
-  text-align: center;
-  color: #a2a2a2;
-  font-weight: 400;
-  padding-bottom: 100px;
 }
 #skills-section h3 span {
   color: #0ba300;
@@ -189,28 +173,12 @@
   height: 1400px;
 }
 #project-section h1 {
-  font-size: 77px;
-  font-weight: 500;
-  text-align: center;
   padding-top: 200px;
 }
 #project-section h1:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  font-size: 35px;
-  vertical-align: middle;
-  content: "\f111";
-  margin-right: 40px;
   color: #ff9e9e;
 }
-#project-section h3 {
-  font-size: 40px;
-  color: #a2a2a2;
-  font-weight: 400;
-  text-align: center;
-  padding-bottom: 100px;
-}
-#project-section h3 span {
+#project-section h1:before span {
   color: #ff9e9e;
 }
 #project-section .project-row-container {
@@ -291,26 +259,10 @@
   margin-bottom: 200px;
 }
 #about-section h1 {
-  text-align: center;
-  font-size: 77px;
-  font-weight: 500;
   padding-top: 20px;
 }
 #about-section h1:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: bold;
-  font-size: 35px;
-  vertical-align: middle;
-  content: "\f111";
-  margin-right: 40px;
   color: #6186ff;
-}
-#about-section h3 {
-  text-align: center;
-  padding-bottom: 100px;
-  font-size: 40px;
-  font-weight: 400;
-  color: #a2a2a2;
 }
 #about-section h3 span {
   color: #6186ff;
@@ -382,6 +334,32 @@ footer p span {
   #about-section {
     margin-bottom: 200px;
   }
+}
+#skills-section h1,
+#project-section h1,
+#about-section h1 {
+  font-size: 60px;
+  font-weight: 500;
+  text-align: center;
+}
+#skills-section h1:before,
+#project-section h1:before,
+#about-section h1:before {
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
+  font-size: 35px;
+  vertical-align: middle;
+  content: '\f111';
+  margin-right: 40px;
+}
+#skills-section h3,
+#project-section h3,
+#about-section h3 {
+  font-size: 30px;
+  color: #a2a2a2;
+  font-weight: 400;
+  text-align: center;
+  padding-bottom: 100px;
 }
 @media only screen and (max-width: 1100px) {
   #skills-section h1,

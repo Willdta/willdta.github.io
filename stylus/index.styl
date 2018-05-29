@@ -75,27 +75,12 @@
   height 1450px
 
   h1
-    font-size 77px
-    text-align center
     padding-top 150px
-    font-weight $medium
 
   h1:before
-    font-family "Font Awesome 5 Free"
-    font-weight: bold
-    font-size: 35px
-    vertical-align: middle
-    content "\f111"
-    margin-right 40px
     color $green
 
-  h3
-    font-size 40px
-    text-align center
-    color $grey
-    font-weight $regular
-    padding-bottom 100px
-
+  h3    
     span
       color $green
 
@@ -193,27 +178,11 @@
   height 1400px
 
   h1
-    font-size 77px
-    font-weight $medium
-    text-align center
     padding-top 200px
 
   h1:before
-    font-family "Font Awesome 5 Free"
-    font-weight: bold
-    font-size: 35px
-    vertical-align: middle
-    content "\f111"
-    margin-right 40px
     color $pink
   
-  h3 
-    font-size 40px
-    color $grey
-    font-weight $regular
-    text-align center
-    padding-bottom 100px 
-
     span
       color $pink
 
@@ -298,27 +267,12 @@
   margin-bottom 200px
 
   h1
-    text-align  center
-    font-size 77px
-    font-weight $medium
     padding-top 20px
 
   h1:before
-    font-family "Font Awesome 5 Free"
-    font-weight: bold
-    font-size: 35px
-    vertical-align: middle
-    content "\f111"
-    margin-right 40px
     color $blue
 
   h3
-    text-align center
-    padding-bottom 100px
-    font-size 40px
-    font-weight $regular
-    color $grey
-
     span
       color $blue
 
@@ -394,7 +348,29 @@ footer
   #about-section
     margin-bottom 200px
 
-// Header Queries
+// Header Styling //
+#skills-section, #project-section, #about-section
+  h1
+    font-size 60px
+    font-weight $medium
+    text-align center
+
+  h1:before
+    font-family 'Font Awesome 5 Free'
+    font-weight: bold
+    font-size: 35px
+    vertical-align: middle
+    content '\f111'
+    margin-right 40px
+  
+  h3 
+    font-size 30px
+    color $grey
+    font-weight $regular
+    text-align center
+    padding-bottom 100px
+
+// Header Queries //
 @media only screen and (max-width 1100px)
   #skills-section, #project-section, #about-section
     h1
