@@ -69,7 +69,7 @@
   }
 }
 #skills-section {
-  max-height: 1200px;
+  height: 1200px;
   position: relative;
 }
 #skills-section h1 {
@@ -89,20 +89,33 @@
   color: #0ba300;
 }
 #skills-section .skills-container {
-  position: relative;
-  top: 10%;
+  display: grid;
+  height: 1100px;
+  grid-template-columns: repeat(4, 180px);
+  grid-template-rows: repeat(4, 180px);
+  grid-column-gap: 8em;
+  grid-row-gap: 5em;
+  justify-content: center;
+  align-content: center;
 }
-#skills-section .skills-row {
+#skills-section .skills-container p {
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+  background: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-#skills-section .skills-row p {
-  padding: 60px 90px;
-  font-size: 25px;
   color: #a2a2a2;
-  font-weight: 300;
   text-align: center;
+}
+@media only screen and (max-width: 1200px) {
+  #skills-section {
+    height: 1700px;
+  }
+  #skills-section .skills-container {
+    height: 1600px;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(6, 180px);
+  }
 }
 @media only screen and (max-width: 1100px) {
   #skills-section h1 {
@@ -111,9 +124,24 @@
   #skills-section h3 {
     font-size: 30px;
   }
-  #skills-section .skills-container .skills-row p {
-    font-size: 18px;
-    padding: 50px 60px;
+}
+@media only screen and (max-width: 850px) {
+  #skills-section {
+    height: 1500px;
+  }
+  #skills-section .skills-container {
+    height: 1500px;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(6, 180px);
+    grid-column-gap: 4em;
+    grid-row-gap: 4em;
+  }
+  #skills-section .skills-container {
+    height: 1900px;
+    grid-template-columns: repeat(2, 180px);
+    grid-template-rows: repeat(8, 180px);
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -128,6 +156,11 @@
     padding: 50px 36px;
   }
 }
+@media only screen and (max-width: 750px) {
+  #skills-section {
+    height: 2200px;
+  }
+}
 @media only screen and (max-width: 500px) {
   #skills-section .skills-container .skills-row p {
     font-size: 15px;
@@ -135,20 +168,39 @@
   }
 }
 @media only screen and (max-width: 450px) {
+  #skills-section {
+    height: 1900px;
+  }
   #skills-section h1 {
     font-size: 30px;
   }
   #skills-section h3 {
     font-size: 20px;
   }
-  #skills-section .skills-container .skills-row p {
-    padding: 50px 16px;
+  #skills-section .skills-container {
+    height: 1500px;
+    grid-template-columns: repeat(2, 140px);
+    grid-template-rows: repeat(8, 140px);
+    grid-column-gap: 2em;
+    grid-row-gap: 3em;
+  }
+  #skills-section .skills-container p {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 340px) {
-  #skills-section .skills-container .skills-row p {
-    font-size: 15px;
-    padding: 50px 10px;
+  #skills-section {
+    height: 1700px;
+  }
+  #skills-section .skills-container {
+    height: 1300px;
+    grid-template-columns: repeat(2, 110px);
+    grid-template-rows: repeat(8, 110px);
+    grid-column-gap: 2em;
+    grid-row-gap: 3em;
+  }
+  #skills-section .skills-container p {
+    font-size: 12px;
   }
 }
 #project-section {
@@ -250,6 +302,7 @@
 @media only screen and (max-width: 450px) {
   #project-section h1 {
     font-size: 30px;
+    padding-top: 80px;
   }
   #project-section h3 {
     font-size: 20px;
@@ -266,8 +319,9 @@
   }
 }
 #about-section {
-  max-height: 3700px;
+  max-height: 3600px;
   margin-bottom: 200px;
+  background: #008000;
 }
 #about-section h1 {
   text-align: center;
@@ -337,6 +391,7 @@
 @media only screen and (max-width: 450px) {
   #about-section h1 {
     font-size: 30px;
+    padding-top: 50px;
   }
   #about-section h3 {
     font-size: 20px;

@@ -72,7 +72,7 @@
 
 // Skills Section Styling //
 #skills-section
-  max-height 1200px
+  height 1200px
   position relative
 
   h1
@@ -92,22 +92,34 @@
       color $green
 
   .skills-container
-      position relative
-      top 10%
-    
-    .skills-row 
+    display grid
+    height 1100px
+    grid-template-columns repeat(4, 180px)
+    grid-template-rows repeat(4, 180px)
+    grid-column-gap 8em
+    grid-row-gap 5em
+    justify-content center
+    align-content center
+  
+    p
+      box-shadow 0 0 20px 0 rgba(0,0,0,0.2)
+      background white
       display flex
       justify-content center
       align-items center
-
-      p
-        padding 60px 90px
-        font-size 25px
-        color $grey
-        font-weight $light
-        text-align center
+      color $grey
+      text-align center
 
 // Skills Section Media Queries //
+@media only screen and (max-width 1200px)
+  #skills-section
+    height 1700px
+
+    .skills-container
+      height 1600px
+      grid-template-columns repeat(3, 180px)
+      grid-template-rows repeat(6, 180px)
+
 @media only screen and (max-width 1100px)
   #skills-section
     h1
@@ -116,11 +128,24 @@
     h3
       font-size 30px
     
+@media only screen and (max-width 850px)
+  #skills-section
+    height 1500px
+
     .skills-container
-      .skills-row 
-          p
-            font-size 18px
-            padding 50px 60px
+      height 1500px
+      grid-template-columns repeat(3, 180px)
+      grid-template-rows repeat(6, 180px)
+      grid-column-gap 4em
+      grid-row-gap 4em
+
+
+    .skills-container
+      height 1900px
+      grid-template-columns repeat(2, 180px)
+      grid-template-rows repeat(8, 180px)
+      grid-column-gap 3em
+      grid-row-gap 3em
 
 @media only screen and (max-width 800px)
   #skills-section
@@ -136,6 +161,10 @@
             font-size 15px
             padding 50px 36px
 
+@media only screen and (max-width 750px)
+  #skills-section  
+    height 2200px
+
 @media only screen and (max-width 500px)
   #skills-section
     .skills-container
@@ -146,23 +175,34 @@
 
 @media only screen and (max-width 450px)
   #skills-section
+    height 1900px
     h1
       font-size 30px
     h3
       font-size 20px
 
     .skills-container
-      .skills-row 
-        p
-          padding 50px 16px
+      height 1500px
+      grid-template-columns repeat(2, 140px)
+      grid-template-rows repeat(8, 140px)
+      grid-column-gap 2em
+      grid-row-gap 3em
+
+      p
+        font-size 13px
 
 @media only screen and (max-width 340px)
   #skills-section
+    height 1700px
     .skills-container
-      .skills-row 
-          p
-            font-size 15px
-            padding 50px 10px
+      height 1300px
+      grid-template-columns repeat(2, 110px)
+      grid-template-rows repeat(8, 110px)
+      grid-column-gap 2em
+      grid-row-gap 3em
+      
+      p
+        font-size 12px
 
 // Project Section Styling //
 #project-section
@@ -267,6 +307,7 @@
   #project-section
     h1
       font-size 30px
+      padding-top 80px
     h3
       font-size 20px
 
@@ -282,8 +323,9 @@
               height 40px
 
 #about-section
-  max-height 3700px
+  max-height 3600px
   margin-bottom 200px
+  background green
 
   h1
     text-align  center
@@ -352,6 +394,7 @@
   #about-section
     h1
       font-size 30px
+      padding-top 50px
     h3
       font-size 20px
 
