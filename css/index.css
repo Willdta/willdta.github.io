@@ -178,7 +178,7 @@
 #project-section h1:before {
   color: #ff9e9e;
 }
-#project-section h1:before span {
+#project-section h3 span {
   color: #ff9e9e;
 }
 #project-section .project-row-container {
@@ -259,7 +259,7 @@
   margin-bottom: 200px;
 }
 #about-section h1 {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 #about-section h1:before {
   color: #6186ff;
@@ -293,6 +293,11 @@
 @media only screen and (max-width: 1100px) {
   #about-section p {
     padding: 0 190px;
+  }
+}
+@media only screen and (max-width: 1070px) {
+  #about-section {
+    padding-top: 250px;
   }
 }
 @media only screen and (max-width: 800px) {
@@ -366,7 +371,6 @@ footer p span {
   #project-section h1,
   #about-section h1 {
     font-size: 50px;
-    padding-top: 200px;
   }
   #skills-section h1:before,
   #project-section h1:before,
@@ -402,7 +406,6 @@ footer p span {
   #project-section h1,
   #about-section h1 {
     font-size: 30px;
-    padding-top: 50px;
   }
   #skills-section h1:before,
   #project-section h1:before,
