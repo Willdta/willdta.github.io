@@ -69,14 +69,22 @@
   }
 }
 #skills-section {
-  height: 1200px;
-  position: relative;
+  height: 1450px;
 }
 #skills-section h1 {
   font-size: 77px;
   text-align: center;
   padding-top: 150px;
   font-weight: 500;
+}
+#skills-section h1:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 35px;
+  vertical-align: middle;
+  content: "\f111";
+  margin-right: 40px;
+  color: #0ba300;
 }
 #skills-section h3 {
   font-size: 40px;
@@ -99,7 +107,8 @@
   align-content: center;
 }
 #skills-section .skills-container p {
-  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  border-radius: 5%;
   background: #fff;
   display: flex;
   justify-content: center;
@@ -117,24 +126,9 @@
     grid-template-rows: repeat(6, 180px);
   }
 }
-@media only screen and (max-width: 1100px) {
-  #skills-section h1 {
-    font-size: 50px;
-  }
-  #skills-section h3 {
-    font-size: 30px;
-  }
-}
 @media only screen and (max-width: 850px) {
   #skills-section {
-    height: 1500px;
-  }
-  #skills-section .skills-container {
-    height: 1500px;
-    grid-template-columns: repeat(3, 180px);
-    grid-template-rows: repeat(6, 180px);
-    grid-column-gap: 4em;
-    grid-row-gap: 4em;
+    height: 2200px;
   }
   #skills-section .skills-container {
     height: 1900px;
@@ -145,12 +139,6 @@
   }
 }
 @media only screen and (max-width: 800px) {
-  #skills-section h1 {
-    font-size: 40px;
-  }
-  #skills-section h3 {
-    font-size: 25px;
-  }
   #skills-section .skills-container .skills-row p {
     font-size: 15px;
     padding: 50px 36px;
@@ -170,12 +158,6 @@
 @media only screen and (max-width: 450px) {
   #skills-section {
     height: 1900px;
-  }
-  #skills-section h1 {
-    font-size: 30px;
-  }
-  #skills-section h3 {
-    font-size: 20px;
   }
   #skills-section .skills-container {
     height: 1500px;
@@ -211,6 +193,15 @@
   font-weight: 500;
   text-align: center;
   padding-top: 200px;
+}
+#project-section h1:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 35px;
+  vertical-align: middle;
+  content: "\f111";
+  margin-right: 40px;
+  color: #ff9e9e;
 }
 #project-section h3 {
   font-size: 40px;
@@ -264,25 +255,9 @@
     width: 400px;
   }
 }
-@media only screen and (max-width: 1100px) {
-  #project-section h1 {
-    font-size: 50px;
-  }
-  #project-section h3 {
-    font-size: 30px;
-  }
-}
 @media only screen and (max-width: 1220px) {
   #project-section .project-row-container .project-row {
     width: 350px;
-  }
-}
-@media only screen and (max-width: 800px) {
-  #project-section h1 {
-    font-size: 40px;
-  }
-  #project-section h3 {
-    font-size: 25px;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -300,18 +275,11 @@
   }
 }
 @media only screen and (max-width: 450px) {
-  #project-section h1 {
-    font-size: 30px;
-    padding-top: 80px;
-  }
-  #project-section h3 {
-    font-size: 20px;
-  }
   #project-section .project-row-container .project-row h4 {
     font-size: 19px;
   }
   #project-section .project-row-container .project-row p {
-    font-size: 15px;
+    font-size: 13px;
   }
   #project-section .project-row-container .project-row .project-links .github-logo,
   #project-section .project-row-container .project-row .project-links .web-logo {
@@ -321,13 +289,21 @@
 #about-section {
   max-height: 3600px;
   margin-bottom: 200px;
-  background: #008000;
 }
 #about-section h1 {
   text-align: center;
   font-size: 77px;
   font-weight: 500;
-  padding-top: 30px;
+  padding-top: 20px;
+}
+#about-section h1:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: bold;
+  font-size: 35px;
+  vertical-align: middle;
+  content: "\f111";
+  margin-right: 40px;
+  color: #6186ff;
 }
 #about-section h3 {
   text-align: center;
@@ -363,24 +339,11 @@
   padding: 0 30px;
 }
 @media only screen and (max-width: 1100px) {
-  #about-section h1 {
-    font-size: 50px;
-    padding-top: 200px;
-  }
-  #about-section h3 {
-    font-size: 30px;
-  }
   #about-section p {
     padding: 0 190px;
   }
 }
 @media only screen and (max-width: 800px) {
-  #about-section h1 {
-    font-size: 40px;
-  }
-  #about-section h3 {
-    font-size: 25px;
-  }
   #about-section p {
     padding: 0 100px;
   }
@@ -389,13 +352,6 @@
   }
 }
 @media only screen and (max-width: 450px) {
-  #about-section h1 {
-    font-size: 30px;
-    padding-top: 50px;
-  }
-  #about-section h3 {
-    font-size: 20px;
-  }
   #about-section p {
     padding: 0 50px;
     font-size: 15px;
@@ -425,5 +381,60 @@ footer p span {
 @media only screen and (max-width: 1000px) {
   #about-section {
     margin-bottom: 200px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #skills-section h1,
+  #project-section h1,
+  #about-section h1 {
+    font-size: 50px;
+    padding-top: 200px;
+  }
+  #skills-section h1:before,
+  #project-section h1:before,
+  #about-section h1:before {
+    font-size: 25px;
+  }
+  #skills-section h3,
+  #project-section h3,
+  #about-section h3 {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #skills-section h1,
+  #project-section h1,
+  #about-section h1 {
+    font-size: 40px;
+  }
+  #skills-section h1:before,
+  #project-section h1:before,
+  #about-section h1:before {
+    font-size: 20px;
+    margin-right: 25px;
+  }
+  #skills-section h3,
+  #project-section h3,
+  #about-section h3 {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #skills-section h1,
+  #project-section h1,
+  #about-section h1 {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  #skills-section h1:before,
+  #project-section h1:before,
+  #about-section h1:before {
+    font-size: 15px;
+    margin-right: 20px;
+  }
+  #skills-section h3,
+  #project-section h3,
+  #about-section h3 {
+    font-size: 20px;
   }
 }

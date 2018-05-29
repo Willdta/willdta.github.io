@@ -72,14 +72,22 @@
 
 // Skills Section Styling //
 #skills-section
-  height 1200px
-  position relative
+  height 1450px
 
   h1
     font-size 77px
     text-align center
     padding-top 150px
     font-weight $medium
+
+  h1:before
+    font-family "Font Awesome 5 Free"
+    font-weight: bold
+    font-size: 35px
+    vertical-align: middle
+    content "\f111"
+    margin-right 40px
+    color $green
 
   h3
     font-size 40px
@@ -102,7 +110,8 @@
     align-content center
   
     p
-      box-shadow 0 0 20px 0 rgba(0,0,0,0.2)
+      box-shadow 0 0 20px 0 rgba(0,0,0,0.1)
+      border-radius 5%
       background white
       display flex
       justify-content center
@@ -120,25 +129,9 @@
       grid-template-columns repeat(3, 180px)
       grid-template-rows repeat(6, 180px)
 
-@media only screen and (max-width 1100px)
-  #skills-section
-    h1
-      font-size 50px
-
-    h3
-      font-size 30px
-    
 @media only screen and (max-width 850px)
   #skills-section
-    height 1500px
-
-    .skills-container
-      height 1500px
-      grid-template-columns repeat(3, 180px)
-      grid-template-rows repeat(6, 180px)
-      grid-column-gap 4em
-      grid-row-gap 4em
-
+    height 2200px
 
     .skills-container
       height 1900px
@@ -148,13 +141,7 @@
       grid-row-gap 3em
 
 @media only screen and (max-width 800px)
-  #skills-section
-    h1
-      font-size 40px
-
-    h3
-      font-size 25px
-    
+  #skills-section    
     .skills-container
       .skills-row 
           p
@@ -176,11 +163,7 @@
 @media only screen and (max-width 450px)
   #skills-section
     height 1900px
-    h1
-      font-size 30px
-    h3
-      font-size 20px
-
+    
     .skills-container
       height 1500px
       grid-template-columns repeat(2, 140px)
@@ -194,6 +177,7 @@
 @media only screen and (max-width 340px)
   #skills-section
     height 1700px
+    
     .skills-container
       height 1300px
       grid-template-columns repeat(2, 110px)
@@ -213,6 +197,15 @@
     font-weight $medium
     text-align center
     padding-top 200px
+
+  h1:before
+    font-family "Font Awesome 5 Free"
+    font-weight: bold
+    font-size: 35px
+    vertical-align: middle
+    content "\f111"
+    margin-right 40px
+    color $pink
   
   h3 
     font-size 40px
@@ -267,27 +260,11 @@
       .project-row
         width 400px
 
-@media only screen and (max-width 1100px)
-  #project-section
-    h1
-      font-size 50px
-
-    h3
-      font-size 30px
-
 @media only screen and (max-width 1220px)
   #project-section
     .project-row-container
       .project-row
         width 350px
-
-@media only screen and (max-width 800px)
- #project-section
-    h1
-      font-size 40px
-
-    h3
-      font-size 25px
 
 @media only screen and (max-width 720px)
   #project-section
@@ -305,18 +282,12 @@
 
 @media only screen and (max-width 450px)
   #project-section
-    h1
-      font-size 30px
-      padding-top 80px
-    h3
-      font-size 20px
-
     .project-row-container
       .project-row
         h4
           font-size 19px
         p
-          font-size 15px
+          font-size 13px
 
         .project-links
           .github-logo, .web-logo
@@ -325,13 +296,22 @@
 #about-section
   max-height 3600px
   margin-bottom 200px
-  background green
 
   h1
     text-align  center
     font-size 77px
     font-weight $medium
-    padding-top 30px
+    padding-top 20px
+
+  h1:before
+    font-family "Font Awesome 5 Free"
+    font-weight: bold
+    font-size: 35px
+    vertical-align: middle
+    content "\f111"
+    margin-right 40px
+    color $blue
+
   h3
     text-align center
     padding-bottom 100px
@@ -367,22 +347,11 @@
 // About Section Media Queries //
 @media only screen and (max-width 1100px)
   #about-section
-    h1
-      font-size 50px
-      padding-top 200px
-    h3
-      font-size 30px
-
     p
       padding 0 190px
 
 @media only screen and (max-width 800px)
   #about-section
-    h1
-      font-size 40px
-    h3
-      font-size 25px
-
     p
       padding 0 100px
     
@@ -392,12 +361,6 @@
 
 @media only screen and (max-width 450px)
   #about-section
-    h1
-      font-size 30px
-      padding-top 50px
-    h3
-      font-size 20px
-
     p
       padding 0 50px
       font-size 15px
@@ -430,3 +393,41 @@ footer
 @media only screen and (max-width 1000px)
   #about-section
     margin-bottom 200px
+
+// Header Queries
+@media only screen and (max-width 1100px)
+  #skills-section, #project-section, #about-section
+    h1
+      font-size 50px
+      padding-top 200px
+
+    h1:before
+      font-size: 25px
+    
+    h3
+      font-size 30px
+
+@media only screen and (max-width 800px)
+  #skills-section, #project-section, #about-section
+    h1
+      font-size 40px
+
+    h1:before
+      font-size: 20px
+      margin-right 25px
+    
+    h3
+      font-size 25px
+
+@media only screen and (max-width 450px)
+  #skills-section, #project-section, #about-section
+    h1
+      font-size 30px
+      padding-top 50px
+
+    h1:before
+      font-size: 15px
+      margin-right 20px
+    
+    h3
+      font-size 20px
