@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500");
+.landing-link {
+  background: #fff;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  top: 40px;
+  display: flex;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s linear;
+}
+.landing-link a {
+  color: #a2a2a2;
+  font-size: 12px;
+}
+.landing-link img {
+  height: 15px;
+}
+.toggle-landing-link {
+  visibility: visible;
+  opacity: 1;
+}
+#landing-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#landing-section h1 {
+  font-weight: 300;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  color: #a2a2a2;
+}
+#landing-section h1 span {
+  color: #000;
+}
+#landing-section ul {
+  display: flex;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+#landing-section ul li>a {
+  padding: 20px;
+  color: #a2a2a2;
+}
+#landing-section .browser-image {
+  height: 400px;
+  margin: 20px 0;
+}
+@media only screen and (max-width: 1100px) {
+  #landing-section h1 {
+    font-size: 25px;
+  }
+  #landing-section .browser-image {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #landing-section .browser-image {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #landing-section {
+    justify-content: center;
+  }
+  #landing-section .browser-image {
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #landing-section h1 {
+    font-size: 20px;
+  }
+  #landing-section ul>li>a {
+    font-size: 14px;
+  }
+  #landing-section .browser-image {
+    height: 130px;
+  }
+}

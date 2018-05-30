@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500");
+#about-section {
+  height: 100%;
+  margin-bottom: 200px;
+}
+#about-section h1:before {
+  color: #6186ff;
+}
+#about-section h3 span {
+  color: #6186ff;
+}
+#about-section p {
+  text-align: center;
+  padding: 0 250px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #a2a2a2;
+}
+#about-section p a {
+  color: #6186ff;
+}
+#about-section p span {
+  color: #6186ff;
+}
+#about-section .connect-links {
+  display: flex;
+  justify-content: center;
+}
+#about-section .connect-links img {
+  height: 80px;
+  margin-top: 50px;
+  padding: 0 30px;
+}
+@media only screen and (max-width: 1100px) {
+  #about-section p {
+    padding: 0 190px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #about-section p {
+    padding: 0 100px;
+  }
+  #about-section .connect-links img {
+    height: 60px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #about-section p {
+    padding: 0 50px;
+    font-size: 15px;
+  }
+  #about-section .connect-links img {
+    height: 40px;
+    padding: 0 20px;
+  }
+}
+footer p {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  color: #a2a2a2;
+  font-size: 10px;
+}
+footer p img {
+  height: 20px;
+  padding: 0 10px;
+}
+footer p span {
+  color: #ff8c7e;
+  padding-left: 10px;
+}

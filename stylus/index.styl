@@ -8,386 +8,6 @@
   font-family $font
   list-style none
 
-// Link back to Landing Section 
-.landing-link
-  background white
-  box-shadow 0 0 20px 0 rgba(0,0,0,0.1)
-  width 50px
-  height 50px
-  border-radius: 50%
-  justify-content center
-  align-items center
-  position fixed
-  right 20px
-  top 40px
-  display flex
-  visibility hidden
-  opacity 0
-  transition all 1s linear
-
-  a
-    color $grey
-    font-size: 12px
-
-.toggle-landing-link
-  visibility visible
-  opacity 1
-
-// Landing Section Styling //
-
-#landing-section
-  height 100vh
-  display flex
-  flex-direction column
-  justify-content space-around
-  align-items center
-
-  h1
-    font-weight $light
-    margin-top 20px
-    margin-bottom 50px
-    color $grey
-
-    span
-      color black
-
-  ul
-    display flex
-    margin-bottom 20px
-    margin-top 50px
-
-    li>a
-      padding 20px
-      color $grey
-
-  .browser-image
-    height 400px
-    margin 20px 0
-
-// Landing Section Media Queries //
-
-@media only screen and (max-width 1100px)
-  #landing-section
-    h1
-      font-size 25px
-
-    .browser-image
-      height 400px
-
-@media only screen and (max-width 800px)
-  #landing-section
-    .browser-image
-      height 300px
-
-@media only screen and (max-width 600px)
-  #landing-section
-    justify-content center
-
-    .browser-image
-      height 200px
-
-@media only screen and (max-width 400px)
-  #landing-section
-    h1
-      font-size 20px
-
-    ul>li>a
-      font-size 14px
-
-    .browser-image
-      height 130px
-
-// Skills Section Styling //
-
-#skills-section
-  height 1450px
-
-  h1
-    padding-top 150px
-
-  h1:before
-    color $green
-
-  h3    
-    span
-      color $green
-
-  .skills-container
-    display grid
-    height 1100px
-    grid-template-columns repeat(4, 180px)
-    grid-template-rows repeat(4, 180px)
-    grid-column-gap 8em
-    grid-row-gap 5em
-    justify-content center
-    align-content center
-  
-    p
-      box-shadow 0 0 20px 0 rgba(0,0,0,0.1)
-      border-radius 5%
-      background white
-      display flex
-      justify-content center
-      align-items center
-      color $grey
-      text-align center
-
-// Skills Section Media Queries //
-
-@media only screen and (max-width 1200px)
-  #skills-section
-    height 1700px
-
-    .skills-container
-      height 1600px
-      grid-template-columns repeat(3, 180px)
-      grid-template-rows repeat(6, 180px)
-
-@media only screen and (max-width 850px)
-  #skills-section
-    height 2200px
-
-    .skills-container
-      height 1900px
-      grid-template-columns repeat(2, 180px)
-      grid-template-rows repeat(8, 180px)
-      grid-column-gap 3em
-      grid-row-gap 3em
-
-@media only screen and (max-width 800px)
-  #skills-section    
-    .skills-container
-      .skills-row 
-          p
-            font-size 15px
-            padding 50px 36px
-
-@media only screen and (max-width 750px)
-  #skills-section  
-    height 2200px
-
-@media only screen and (max-width 500px)
-  #skills-section
-    .skills-container
-      .skills-row 
-          p
-            font-size 15px
-            padding 50px 20px
-
-@media only screen and (max-width 450px)
-  #skills-section
-    height 1800px
-    
-    .skills-container
-      height 1500px
-      grid-template-columns repeat(2, 140px)
-      grid-template-rows repeat(8, 140px)
-      grid-column-gap 2em
-      grid-row-gap 3em
-
-      p
-        font-size 13px
-
-@media only screen and (max-width 340px)
-  #skills-section
-    height 1600px
-    
-    .skills-container
-      height 1300px
-      grid-template-columns repeat(2, 110px)
-      grid-template-rows repeat(8, 110px)
-      grid-column-gap 2em
-      grid-row-gap 3em
-      
-      p
-        font-size 12px
-
-// Project Section Styling //
-
-#project-section
-  height 1400px
-
-  h1
-    padding-top 200px
-
-  h1:before
-    color $pink
-  
-  h3
-    span
-      color $pink
-
-  .project-row-container
-    height 90vh
-    display flex
-    justify-content space-around
-    flex-wrap wrap
-    align-items center
-    
-    .project-row
-      display flex
-      justify-content space-around
-      align-items center
-      flex-direction column
-      padding 0 10px
-      height 350px
-      width 500px
-
-      h4
-        font-size 24px
-        color $grey
-        font-weight $light
-
-      p
-        color $grey
-        font-weight $light
-        text-align center
-
-      .project-links
-        display flex
-
-        .github-logo, .web-logo
-          height 50px
-          padding 0 20px
-
-      .more-arrow
-        height 30px
-
-// Project Section Media Queries //
-
-@media only screen and (max-width 1520px)
-  #project-section
-    .project-row-container
-      .project-row
-        width 400px
-
-@media only screen and (max-width 1220px)
-  #project-section
-    .project-row-container
-      .project-row
-        width 350px
-
-@media only screen and (max-width 720px)
-  #project-section
-    .project-row-container
-      .project-row
-        width 250px
-
-@media only screen and (max-width 720px)
-  #project-section
-    height 2200px
-    .project-row-container
-      .project-row
-        width 350px
-        height 300px
-
-@media only screen and (max-width 450px)
-  #project-section
-    .project-row-container
-      .project-row
-        h4
-          font-size 19px
-        p
-          font-size 13px
-
-        .project-links
-          .github-logo, .web-logo
-              height 40px
-
-#about-section
-  max-height 3600px
-  margin-bottom 200px
-
-  h1
-    padding-top 50px
-
-  h1:before
-    color $blue
-
-  h3
-    span
-      color $blue
-
-  p
-    text-align center
-    padding 0 250px
-    line-height 40px
-    font-size 18px
-    font-weight $light
-    color $grey
-
-    a
-      color $blue
-
-    span
-      color $blue
-  
-  .connect-links
-    display  flex
-    justify-content center
-    img
-      height 80px
-      margin-top 50px
-      padding 0 30px
-
-// About Section Media Queries //
-
-@media only screen and (max-width 1100px)
-  #about-section
-    p
-      padding 0 190px
-
-@media only screen and (max-width 1070px)
-  #about-section
-    padding-top 250px
-
-@media only screen and (max-width 800px)
-  #about-section
-    p
-      padding 0 100px
-    
-    .connect-links
-      img
-        height 60px
-
-@media only screen and (max-width 450px)
-  #about-section
-    p
-      padding 0 50px
-      font-size 15px
-
-    .connect-links
-      img
-        height 40px
-        padding 0 20px
-
-// Footer Section Styling //
-
-footer
-  p
-    text-align center
-    display flex
-    justify-content center
-    align-items center
-    margin-bottom 50px
-    color $grey
-    font-size 10px
-
-    img
-      height 20px
-      padding 0 10px
-    
-    span
-      color $heart
-      padding-left 10px
-
-
-// Footer Section Media Queries //
-
-@media only screen and (max-width 1000px)
-  #about-section
-    margin-bottom 200px
-
 // Header Styling //
 
 #skills-section, #project-section, #about-section
@@ -395,12 +15,13 @@ footer
     font-size 60px
     font-weight $medium
     text-align center
+    padding-top 200px
 
   h1:before
     font-family 'Font Awesome 5 Free'
-    font-weight: bold
-    font-size: 35px
-    vertical-align: middle
+    font-weight bold
+    font-size 35px
+    vertical-align middle
     content '\f111'
     margin-right 40px
   
@@ -419,7 +40,7 @@ footer
       font-size 50px
 
     h1:before
-      font-size: 25px
+      font-size 25px
     
     h3
       font-size 30px
@@ -430,7 +51,7 @@ footer
       font-size 40px
 
     h1:before
-      font-size: 20px
+      font-size 20px
       margin-right 25px
     
     h3
@@ -442,7 +63,7 @@ footer
       font-size 30px
 
     h1:before
-      font-size: 15px
+      font-size 15px
       margin-right 20px
     
     h3

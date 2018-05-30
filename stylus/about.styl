@@ -1,0 +1,83 @@
+@import './variables.styl'
+
+// About Section Styling //
+
+#about-section
+  height 100%
+  margin-bottom 200px
+
+  h1:before
+    color $blue
+
+  h3
+    span
+      color $blue
+
+  p
+    text-align center
+    padding 0 250px
+    line-height 40px
+    font-size 18px
+    font-weight $light
+    color $grey
+
+    a
+      color $blue
+
+    span
+      color $blue
+  
+  .connect-links
+    display  flex
+    justify-content center
+    img
+      height 80px
+      margin-top 50px
+      padding 0 30px
+
+// About Section Media Queries //
+
+@media only screen and (max-width 1100px)
+  #about-section
+    p
+      padding 0 190px
+
+@media only screen and (max-width 800px)
+  #about-section
+    p
+      padding 0 100px
+    
+    .connect-links
+      img
+        height 60px
+
+@media only screen and (max-width 450px)
+  #about-section
+    p
+      padding 0 50px
+      font-size 15px
+
+    .connect-links
+      img
+        height 40px
+        padding 0 20px
+
+// Footer Section Styling //
+
+footer
+  p
+    text-align center
+    display flex
+    justify-content center
+    align-items center
+    margin-bottom 50px
+    color $grey
+    font-size 10px
+
+    img
+      height 20px
+      padding 0 10px
+    
+    span
+      color $heart
+      padding-left 10px

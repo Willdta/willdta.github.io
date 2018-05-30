@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,500");
+#project-section {
+  height: 100%;
+}
+#project-section h1:before {
+  color: #ff9e9e;
+}
+#project-section h3 span {
+  color: #ff9e9e;
+}
+#project-section .project-row-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+#project-section .project-row-container .project-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 10px;
+  height: 350px;
+  width: 500px;
+}
+#project-section .project-row-container .project-row h4 {
+  font-size: 24px;
+  color: #a2a2a2;
+  font-weight: 300;
+}
+#project-section .project-row-container .project-row p {
+  color: #a2a2a2;
+  font-weight: 300;
+  text-align: center;
+}
+#project-section .project-row-container .project-row .project-links {
+  display: flex;
+}
+#project-section .project-row-container .project-row .project-links .github-logo,
+#project-section .project-row-container .project-row .project-links .web-logo {
+  height: 50px;
+  padding: 0 20px;
+}
+#project-section .project-row-container .project-row .more-arrow {
+  height: 30px;
+}
+@media only screen and (max-width: 1520px) {
+  #project-section .project-row-container .project-row {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 1220px) {
+  #project-section .project-row-container .project-row {
+    width: 350px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #project-section .project-row-container .project-row {
+    width: 250px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  #project-section .project-row-container .project-row {
+    width: 350px;
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #project-section .project-row-container .project-row h4 {
+    font-size: 19px;
+  }
+  #project-section .project-row-container .project-row p {
+    font-size: 13px;
+  }
+  #project-section .project-row-container .project-row .project-links .github-logo,
+  #project-section .project-row-container .project-row .project-links .web-logo {
+    height: 40px;
+  }
+}

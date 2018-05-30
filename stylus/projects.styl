@@ -1,0 +1,90 @@
+@import './variables.styl'
+
+
+// Project Section Styling //
+
+#project-section
+  height 100%
+
+  h1:before
+    color $pink
+  
+  h3
+    span
+      color $pink
+
+  .project-row-container
+    height 100%
+    display flex
+    justify-content space-around
+    flex-wrap wrap
+    align-items center
+    
+    .project-row
+      display flex
+      justify-content space-around
+      align-items center
+      flex-direction column
+      padding 0 10px
+      height 350px
+      width 500px
+
+      h4
+        font-size 24px
+        color $grey
+        font-weight $light
+
+      p
+        color $grey
+        font-weight $light
+        text-align center
+
+      .project-links
+        display flex
+
+        .github-logo, .web-logo
+          height 50px
+          padding 0 20px
+
+      .more-arrow
+        height 30px
+
+// Project Section Media Queries //
+
+@media only screen and (max-width 1520px)
+  #project-section
+    .project-row-container
+      .project-row
+        width 400px
+
+@media only screen and (max-width 1220px)
+  #project-section
+    .project-row-container
+      .project-row
+        width 350px
+
+@media only screen and (max-width 720px)
+  #project-section
+    .project-row-container
+      .project-row
+        width 250px
+
+@media only screen and (max-width 720px)
+  #project-section
+    .project-row-container
+      .project-row
+        width 350px
+        height 300px
+
+@media only screen and (max-width 450px)
+  #project-section
+    .project-row-container
+      .project-row
+        h4
+          font-size 19px
+        p
+          font-size 13px
+
+        .project-links
+          .github-logo, .web-logo
+              height 40px
