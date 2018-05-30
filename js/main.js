@@ -1,4 +1,7 @@
 $(() => {
+
+  // Scroll To Landing Check //
+
   $(window).scroll(function() {
     const skillLink = document.getElementsByClassName('menu')[1].offsetTop + 100
   
@@ -9,6 +12,8 @@ $(() => {
     }
   })
 
+  // Link Navigation Animation //
+
   $('.menu').click(function(e) {
     e.preventDefault()
 
@@ -16,4 +21,11 @@ $(() => {
       'scrollTop': $(this.hash).offset().top
     }, 1000)
   })
+
+  // Loader //
+
+  setTimeout(() => {
+    $('body').addClass('toggle-overflow')
+    $('.loader').addClass('toggle-loader')
+  }, 1300)
 })
