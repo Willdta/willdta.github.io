@@ -8,9 +8,34 @@
   font-family $font
   list-style none
 
+// Link back to Landing Section 
+.landing-link
+  background white
+  box-shadow 0 0 20px 0 rgba(0,0,0,0.1)
+  width 50px
+  height 50px
+  border-radius: 50%
+  justify-content center
+  align-items center
+  position fixed
+  right 20px
+  top 40px
+  display flex
+  visibility hidden
+  opacity 0
+  transition all 1s linear
+
+  a
+    color $grey
+    font-size: 12px
+
+.toggle-landing-link
+  visibility visible
+  opacity 1
+
 // Landing Section Styling //
 
-.landing-section
+#landing-section
   height 100vh
   display flex
   flex-direction column
@@ -42,7 +67,7 @@
 // Landing Section Media Queries //
 
 @media only screen and (max-width 1100px)
-  .landing-section
+  #landing-section
     h1
       font-size 25px
 
@@ -50,19 +75,19 @@
       height 400px
 
 @media only screen and (max-width 800px)
-  .landing-section
+  #landing-section
     .browser-image
       height 300px
 
 @media only screen and (max-width 600px)
-  .landing-section
+  #landing-section
     justify-content center
 
     .browser-image
       height 200px
 
 @media only screen and (max-width 400px)
-  .landing-section
+  #landing-section
     h1
       font-size 20px
 
@@ -355,6 +380,7 @@ footer
     span
       color $heart
       padding-left 10px
+
 
 // Footer Section Media Queries //
 
