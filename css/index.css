@@ -30,7 +30,6 @@ body {
 }
 .loader h1 {
   font-size: 20px;
-  color: #a2a2a2;
 }
 .loader .spinner {
   margin: 50px auto;
@@ -48,7 +47,7 @@ body {
   display: inline-block;
   position: absolute;
   top: 0;
-  background-color: #a2a2a2;
+  background: #000;
   border-radius: 100%;
   -webkit-animation: sk-bounce 2s infinite ease-in-out;
   animation: sk-bounce 2s infinite ease-in-out;

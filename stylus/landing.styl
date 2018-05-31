@@ -4,10 +4,10 @@
 
 .landing-link
   background white
-  box-shadow 0 0 20px 0 rgba(0,0,0,0.1)
+  box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.1)
   width 50px
   height 50px
-  border-radius: 50%
+  border-radius 50%
   justify-content center
   align-items center
   position fixed
@@ -20,7 +20,7 @@
 
   a
     color $grey
-    font-size: 12px
+    font-size 12px
 
   img
     height 15px
@@ -35,60 +35,74 @@
   height 100vh
   display flex
   flex-direction column
-  justify-content space-around
+  justify-content center
   align-items center
 
   h1
+    padding 50px 20px
+    // border-top 1px solid black
+    // border-bottom 1px solid black
+    border 1px solid black
+    font-size 70px
     font-weight $light
     margin-top 20px
-    margin-bottom 50px
-    color $grey
-
-    span
-      color black
+    display flex
 
   ul
     display flex
     margin-bottom 20px
     margin-top 50px
 
-    li>a
-      padding 20px
-      color $grey
+    span
+      font-size 20px
 
-  .browser-image
-    height 400px
-    margin 20px 0
+    li>a
+      margin 0 20px
+      color black
+      font-size 20px
+      position relative
+
+    li>a:before
+      content ''
+      position absolute
+      bottom -10px
+      left 0
+      right 0
+      background black
+      width 100%
+      height 1px
+      transform scaleX(0)
+      transition all 1s ease
+
+    li>a:hover:before
+      transform scaleX(1)
 
 // Landing Section Media Queries //
 
-@media only screen and (max-width 1100px)
-  #landing-section
-    h1
-      font-size 25px
-
-    .browser-image
-      height 400px
-
 @media only screen and (max-width 800px)
   #landing-section
-    .browser-image
-      height 300px
+    h1
+      font-size 50px
 
 @media only screen and (max-width 600px)
   #landing-section
-    justify-content center
-
-    .browser-image
-      height 200px
+    h1
+      font-size 30px
+    
+    ul>li>a
+      font-size 18px
+    
+    ul>span
+      font-size 18px
 
 @media only screen and (max-width 400px)
   #landing-section
     h1
-      font-size 20px
+      font-size 25px
 
     ul>li>a
-      font-size 14px
-
-    .browser-image
-      height 130px
+      font-size 16px
+      margin 0 10px
+    
+    ul>span
+      font-size 16px
