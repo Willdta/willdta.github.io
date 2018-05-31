@@ -4,25 +4,35 @@ $(() => {
 
   $(window).scroll(function() {
     const skillLink = document.getElementsByClassName('menu')[1].offsetTop + 100
-  
+    
     if (window.scrollY > skillLink) {
       $('.landing-link').addClass('toggle-landing-link')
     } else {
       $('.landing-link').removeClass('toggle-landing-link')
     }
   })
-
+  
   // Link Navigation Animation //
-
+  
   $('.menu').click(function(e) {
     e.preventDefault()
 
     $('body, html').animate({
-      'scrollTop': $(this.hash).offset().top
+      scrollTop: $(this.hash).offset().top + 150
     }, 1000)
   })
 
-  // Loader //
+  // Animation to Landing Section //
+
+  $('.landing-menu').click(function(e) {
+    e.preventDefault()
+
+    $('body, html').animate({
+      scrollTop: $(this.hash).offset().top
+    }, 1000)
+  })
+
+  // Loader, Landing Animation //
   
   setTimeout(() => {
     $('body').addClass('toggle-overflow')
