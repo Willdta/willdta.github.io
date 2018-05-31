@@ -23,9 +23,14 @@ $(() => {
   })
 
   // Loader //
-
+  
   setTimeout(() => {
     $('body').addClass('toggle-overflow')
     $('.loader').addClass('toggle-loader')
+    $('#landing-section > h1').fadeIn()
   }, 1300)
+
+  setTimeout(() => {
+    $('#landing-section > ul > li').addClass('toggle-nav')   
+  }, 2000)
 })
