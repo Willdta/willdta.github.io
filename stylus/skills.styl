@@ -21,15 +21,34 @@
     grid-row-gap 5em
     justify-content center
     align-content center
-  
-    p
+
+    div
       box-shadow 0 0 20px 0 rgba(0,0,0,0.1)
       border-radius 5%
       background white
       display flex
       justify-content center
       align-items center
-      text-align center
+      position relative
+
+      &:hover .skill-info
+        opacity 1
+        height 35px
+
+      img
+        height 70px
+        width 70px
+    
+      .skill-info
+        position absolute
+        width 100%
+        bottom 0
+        height 0px
+        opacity 0
+        transition: 250ms all cubic-bezier(0.64, 0.57, 0.67, 1.53)
+
+        p
+          color $grey
 
 // Skills Section Media Queries //
 
