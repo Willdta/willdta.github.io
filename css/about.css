@@ -71,3 +71,16 @@ footer img {
   width: 25px;
   margin: 0 20px;
 }
+@media only screen and (max-width: 450px) {
+  footer p {
+    font-size: 7px;
+  }
+  footer p a>span {
+    padding: 0 5px;
+  }
+  footer img {
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+  }
+}
