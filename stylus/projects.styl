@@ -32,9 +32,8 @@
         font-size 24px
         font-weight $light
 
-      .info-arrow
-        height 40px
-        width 40px
+      p
+        text-align center
 
       .project-links
         display flex
@@ -86,14 +85,9 @@
     .project-row-container
       grid-template-columns repeat(1, 350px)
       grid-template-rows repeat(5, 300px)
-      
-      .project-row
+        
         h4
           font-size 19px
-
-        .info-arrow
-          height 30px
-          width 30px
 
         .project-links
           .github-logo, .web-logo
@@ -104,6 +98,9 @@
     .project-row-container
       grid-template-columns repeat(1, 280px)
       grid-template-rows repeat(5, 230px)
+
+      .project-row>p
+        font-size 13px
 
 @media only screen and (max-width 350px)
   #project-section

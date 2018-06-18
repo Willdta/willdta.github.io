@@ -28,9 +28,8 @@
   font-size: 24px;
   font-weight: 300;
 }
-#project-section .project-row-container .project-row .info-arrow {
-  height: 40px;
-  width: 40px;
+#project-section .project-row-container .project-row p {
+  text-align: center;
 }
 #project-section .project-row-container .project-row .project-links {
   display: flex;
@@ -79,17 +78,15 @@
 @media only screen and (max-width: 500px) {
   #project-section .project-row-container {
     grid-template-columns: repeat(1, 350px);
-    grid-template-rows: repeat(5, 300px);
   }
-  #project-section .project-row-container .project-row h4 {
+  #project-section .project-row-container grid-template-rows repeat(5 h4,
+  #project-section .project-row-container 300px) h4 {
     font-size: 19px;
   }
-  #project-section .project-row-container .project-row .info-arrow {
-    height: 30px;
-    width: 30px;
-  }
-  #project-section .project-row-container .project-row .project-links .github-logo,
-  #project-section .project-row-container .project-row .project-links .web-logo {
+  #project-section .project-row-container grid-template-rows repeat(5 .project-links .github-logo,
+  #project-section .project-row-container 300px) .project-links .github-logo,
+  #project-section .project-row-container grid-template-rows repeat(5 .project-links .web-logo,
+  #project-section .project-row-container 300px) .project-links .web-logo {
     height: 40px;
   }
 }
@@ -97,6 +94,9 @@
   #project-section .project-row-container {
     grid-template-columns: repeat(1, 280px);
     grid-template-rows: repeat(5, 230px);
+  }
+  #project-section .project-row-container .project-row>p {
+    font-size: 13px;
   }
 }
 @media only screen and (max-width: 350px) {
