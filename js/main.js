@@ -18,7 +18,7 @@ $(() => {
     e.preventDefault()
 
     $('body, html').animate({
-      scrollTop: $(this.hash).offset().top + 150
+      scrollTop: $(this.hash).offset().top - 20
     }, 1000)
   })
 

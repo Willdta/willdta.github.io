@@ -30,23 +30,33 @@ html(lang="en")
     //- Landing Section
 
     #landing-section
-      h1 hi i'm gabriel pozo
+      .one.cube
+        a.menu(href="#skills-section") tools   
+      .two.cube
+        a.menu(href="#project-section") work
+      .three.cube   
+        a.menu(href="#about-section") about
+      
+      //- h1 hi i'm gabriel pozo
 
-      ul
-        li  
-          a.menu(href="#skills-section") skills 
-        li
-          a.menu(href="#project-section") projects
-        li
-          a.menu(href="#about-section") about
+      //- ul
+      //-   li  
+      //-     a.menu(href="#skills-section") skills 
+      //-   li
+      //-     a.menu(href="#project-section") projects
+      //-   li
+      //-     a.menu(href="#about-section") about
 
     //- Skills Section
 
     #skills-section
-      h1 skills
-      h3
-        span return
-        |  i use and adore
+      .header-container
+        h1 tools
+          .top-border.header-border.tools-border
+          .bottom-border.header-border.tools-border
+      //- h3
+      //-   span return
+      //-   |  i use and adore
 
       .skills-container
         div
@@ -116,10 +126,13 @@ html(lang="en")
     //- Project Section
 
     #project-section
-      h1 projects
-      h3
-        span return
-        |  check out some bomb projects
+      .header-container
+        h1 work
+          .top-border.header-border.work-border
+          .bottom-border.header-border.work-border
+      //- h3
+      //-   span return
+      //-   |  check out some bomb projects
 
       .project-row-container
         .project-row
@@ -168,10 +181,13 @@ html(lang="en")
     //- About Section
 
     #about-section
-      h1 about me
-      h3
-        span return
-        |  don't worry i'll keep it briefish
+      .header-container
+        h1 about
+          .top-border.header-border.about-border
+          .bottom-border.header-border.about-border
+      //- h3
+      //-   span return
+      //-   |  don't worry i'll keep it briefish
 
       p `my name is 
         span ${gabriel pozo} 

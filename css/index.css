@@ -138,23 +138,53 @@ body {
 .toggle-loader {
   display: none;
 }
-#skills-section h1,
-#project-section h1,
-#about-section h1 {
-  font-size: 60px;
-  font-weight: 500;
-  text-align: center;
-  padding-top: 200px;
+#skills-section .header-container,
+#project-section .header-container,
+#about-section .header-container {
+  margin: 200px 0;
 }
-#skills-section h1:before,
-#project-section h1:before,
-#about-section h1:before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: bold;
-  font-size: 35px;
-  vertical-align: middle;
-  content: '\f111';
-  margin-right: 40px;
+#skills-section .header-container h1,
+#project-section .header-container h1,
+#about-section .header-container h1 {
+  font-size: 60px;
+  font-weight: 300;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#skills-section .header-container h1 .top-border,
+#project-section .header-container h1 .top-border,
+#about-section .header-container h1 .top-border {
+  top: 0px;
+  right: 0;
+}
+#skills-section .header-container h1 .bottom-border,
+#project-section .header-container h1 .bottom-border,
+#about-section .header-container h1 .bottom-border {
+  bottom: 0px;
+}
+#skills-section .header-container h1 .header-border,
+#project-section .header-container h1 .header-border,
+#about-section .header-container h1 .header-border {
+  position: absolute;
+  width: 35%;
+  height: 1px;
+}
+#skills-section .header-container h1 .tools-border,
+#project-section .header-container h1 .tools-border,
+#about-section .header-container h1 .tools-border {
+  background: #6c9;
+}
+#skills-section .header-container h1 .work-border,
+#project-section .header-container h1 .work-border,
+#about-section .header-container h1 .work-border {
+  background: #ff9e9e;
+}
+#skills-section .header-container h1 .about-border,
+#project-section .header-container h1 .about-border,
+#about-section .header-container h1 .about-border {
+  background: #6bb9f0;
 }
 #skills-section h3,
 #project-section h3,
@@ -167,56 +197,10 @@ body {
   padding-right: 10px;
   padding-left: 10px;
 }
-@media only screen and (max-width: 1100px) {
-  #skills-section h1,
-  #project-section h1,
-  #about-section h1 {
-    font-size: 50px;
-  }
-  #skills-section h1:before,
-  #project-section h1:before,
-  #about-section h1:before {
-    font-size: 25px;
-  }
-  #skills-section h3,
-  #project-section h3,
-  #about-section h3 {
-    font-size: 30px;
-  }
-}
 @media only screen and (max-width: 800px) {
-  #skills-section h1,
-  #project-section h1,
-  #about-section h1 {
+  #skills-section .header-container h1,
+  #project-section .header-container h1,
+  #about-section .header-container h1 {
     font-size: 40px;
-  }
-  #skills-section h1:before,
-  #project-section h1:before,
-  #about-section h1:before {
-    font-size: 20px;
-    margin-right: 25px;
-  }
-  #skills-section h3,
-  #project-section h3,
-  #about-section h3 {
-    font-size: 25px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  #skills-section h1,
-  #project-section h1,
-  #about-section h1 {
-    font-size: 30px;
-  }
-  #skills-section h1:before,
-  #project-section h1:before,
-  #about-section h1:before {
-    font-size: 15px;
-    margin-right: 20px;
-  }
-  #skills-section h3,
-  #project-section h3,
-  #about-section h3 {
-    font-size: 17px;
   }
 }
