@@ -55,16 +55,18 @@
 
     a
       position absolute
+      top 150%
       font-size 20px
-      bottom -60px
       left 50%
-      transform translateX(-50%) rotate(90deg)
+      transform translateX(-50%)
+      writing-mode vertical-lr
+      text-orientation upright
       text-align center
       color black
       transition 300ms all cubic-bezier(0.64, 0.57, 0.67, 1.53)
 
       &:hover
-        bottom -80px
+        top 190%
 
   .toggle-nav
     visibility visible

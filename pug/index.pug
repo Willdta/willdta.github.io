@@ -31,32 +31,17 @@ html(lang="en")
 
     #landing-section
       .one.cube
-        a.menu(href="#skills-section") tools   
+        a.menu(href="#skills-section") tools
       .two.cube
         a.menu(href="#project-section") work
       .three.cube   
         a.menu(href="#about-section") about
-      
-      //- h1 hi i'm gabriel pozo
-
-      //- ul
-      //-   li  
-      //-     a.menu(href="#skills-section") skills 
-      //-   li
-      //-     a.menu(href="#project-section") projects
-      //-   li
-      //-     a.menu(href="#about-section") about
-
-    //- Skills Section
 
     #skills-section
       .header-container
         h1 tools
           .top-border.header-border.tools-border
           .bottom-border.header-border.tools-border
-      //- h3
-      //-   span return
-      //-   |  i use and adore
 
       .skills-container
         div
@@ -130,9 +115,6 @@ html(lang="en")
         h1 work
           .top-border.header-border.work-border
           .bottom-border.header-border.work-border
-      //- h3
-      //-   span return
-      //-   |  check out some bomb projects
 
       .project-row-container
         .project-row
@@ -181,60 +163,40 @@ html(lang="en")
     //- About Section
 
     #about-section
-      .header-container
+      .header-container.about-header-container
         h1 about
           .top-border.header-border.about-border
           .bottom-border.header-border.about-border
-      //- h3
-      //-   span return
-      //-   |  don't worry i'll keep it briefish
 
-      p `my name is 
-        span ${gabriel pozo} 
-        |and i would like to welcome you to end of my website. as amazed as you were by the previous content, everything must come to an end. now a little about me before we part ways (you can always revisit though so don't be so sad).`
+      .about-container
+        .about-section.about-grid
+          h2 about
+          img(src="../images/boy.svg", alt="")
+          p i'm gabriel pozo. i'm a front end developer with a passion for minimalism. i believe that the simpler the message, the easier it is to understand.
 
-      br
-      br
+        .hobby-section.about-grid
+          h2 hobbies
+          img(src="../images/puzzle.svg", alt="")
+          p dogs, netflix, food, music, fitness
 
-      p `i love designing and developing gorgeous websites (like the one you are viewing right now), with my favourite tools 
-        a.menu(href="#skills-section") 
-          span ${skills}
-        |. i consider myself a minimalist (notice the color choices?) and i believe that the most pleasing websites are the most simple and user friendly ones.`
+        .contact-section.about-grid
+          h2 contact
+          img(src="../images/network.svg", alt="")
+          .contact-links
+            a(href="mailto:gpozo@me.com") email
+            a(href="https://www.linkedin.com/in/gabriel-pozo-a6033315b/") linkedin
 
-      br
-      br
-
-      p `ok, enough about coding... what do i like to do outside of development? well a couple of things, since you so kindly asked: 
-
-        br
-
-        span [ 
-        |'working out', 'playing with my little cute chihuahua', 'biking', 'netflix', 'going on long walks (on the beach preferably)' 
-        span ]
-        |`
-
-      br
-      br
-
-      p `one last thing, feel free to connect with me here (you know you want to):`
-
-      .connect-links
-        a(href="https://www.linkedin.com/in/gabriel-pozo-a6033315b/")
-          img(src="../images/linkedin.svg", alt="")
-        a(href="mailto:gpozo@me.com")
-          img(src="../images/arroba.svg", alt="")
-
-  footer
-    p made with
-      img(src="../images/heart.svg")
-      | and
-      a(href="https://www.flaticon.com/")
-        span flaticon
-      | and
-      img(src="../images/pug.svg")
-      | and
-      img(src="../images/stylus_icon.svg", alt="")
-      | by gabriel pozo
+    footer
+      p made with
+        img(src="../images/heart.svg")
+        | and
+        a(href="https://www.flaticon.com/")
+          span flaticon
+        | and
+        img(src="../images/pug.svg")
+        | and
+        img(src="../images/stylus_icon.svg", alt="")
+        | by gabriel pozo
 
   script(
   src="https://code.jquery.com/jquery-3.3.1.min.js"

@@ -146,30 +146,33 @@ body {
 #skills-section .header-container h1,
 #project-section .header-container h1,
 #about-section .header-container h1 {
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 300;
   display: inline-block;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
+  writing-mode: vertical-lr;
+  text-orientation: upright;
 }
 #skills-section .header-container h1 .top-border,
 #project-section .header-container h1 .top-border,
 #about-section .header-container h1 .top-border {
-  top: 0px;
-  right: 0;
+  top: 0;
+  left: 0;
 }
 #skills-section .header-container h1 .bottom-border,
 #project-section .header-container h1 .bottom-border,
 #about-section .header-container h1 .bottom-border {
-  bottom: 0px;
+  bottom: 0;
+  right: 0;
 }
 #skills-section .header-container h1 .header-border,
 #project-section .header-container h1 .header-border,
 #about-section .header-container h1 .header-border {
   position: absolute;
-  width: 35%;
-  height: 1px;
+  width: 1px;
+  height: 20%;
 }
 #skills-section .header-container h1 .tools-border,
 #project-section .header-container h1 .tools-border,
