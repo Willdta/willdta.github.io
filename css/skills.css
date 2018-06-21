@@ -20,7 +20,6 @@
 }
 #skills-section .skills-container div {
   box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-  border-radius: 5%;
   background: #fff;
   display: flex;
   justify-content: center;

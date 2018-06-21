@@ -152,27 +152,15 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  writing-mode: vertical-lr;
-  text-orientation: upright;
-}
-#skills-section .header-container h1 .top-border,
-#project-section .header-container h1 .top-border,
-#about-section .header-container h1 .top-border {
-  top: 0;
-  left: 0;
-}
-#skills-section .header-container h1 .bottom-border,
-#project-section .header-container h1 .bottom-border,
-#about-section .header-container h1 .bottom-border {
-  bottom: 0;
-  right: 0;
 }
 #skills-section .header-container h1 .header-border,
 #project-section .header-container h1 .header-border,
 #about-section .header-container h1 .header-border {
   position: absolute;
-  width: 1px;
-  height: 20%;
+  width: 100%;
+  height: 1px;
+  top: -5px;
+  left: 0;
 }
 #skills-section .header-container h1 .tools-border,
 #project-section .header-container h1 .tools-border,

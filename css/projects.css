@@ -22,7 +22,6 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  border-radius: 2%;
 }
 #project-section .project-row-container .project-row h4 {
   font-size: 24px;

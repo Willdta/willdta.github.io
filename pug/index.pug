@@ -40,8 +40,7 @@ html(lang="en")
     #skills-section
       .header-container
         h1 tools
-          .top-border.header-border.tools-border
-          .bottom-border.header-border.tools-border
+          .header-border.tools-border
 
       .skills-container
         div
@@ -113,8 +112,7 @@ html(lang="en")
     #project-section
       .header-container
         h1 work
-          .top-border.header-border.work-border
-          .bottom-border.header-border.work-border
+          .header-border.work-border
 
       .project-row-container
         .project-row
@@ -163,28 +161,49 @@ html(lang="en")
     //- About Section
 
     #about-section
-      .header-container.about-header-container
+      .header-container
         h1 about
-          .top-border.header-border.about-border
-          .bottom-border.header-border.about-border
+          .header-border.about-border
 
       .about-container
         .about-section.about-grid
-          h2 about
-          img(src="../images/boy.svg", alt="")
-          p i'm gabriel pozo. i'm a front end developer with a passion for minimalism. i believe that the simpler the message, the easier it is to understand.
+          h2 i'm...
+          .image-info
+          img.image-info(src="../images/boy.svg", alt="")
+          p gabriel pozo. a front end developer with a passion for minimalism. i believe that the simpler the message, the easier it is to convey
 
         .hobby-section.about-grid
-          h2 hobbies
-          img(src="../images/puzzle.svg", alt="")
-          p dogs, netflix, food, music, fitness
+          h2 i enjoy...
+          .image-info
+          img.image-info(src="../images/puzzle.svg", alt="")
+          .hobby-images
+            div
+              img(src="../images/tennis-ball.svg", alt="")
+              p tennis
+            div
+              img(src="../images/strong.svg", alt="")
+              p fitness
+            div
+              img(src="../images/dog.svg", alt="")
+              p dogs
+            div  
+              img(src="../images/netflix.svg", alt="")
+              p netflix
+            div  
+              img(src="../images/hiker.svg", alt="")
+              p hiking
 
         .contact-section.about-grid
-          h2 contact
-          img(src="../images/network.svg", alt="")
+          h2 connect...
+          .image-info
+          img.image-info(src="../images/network.svg", alt="")
           .contact-links
-            a(href="mailto:gpozo@me.com") email
-            a(href="https://www.linkedin.com/in/gabriel-pozo-a6033315b/") linkedin
+            a(href="mailto:gpozo@me.com")
+              img(src="../images/gmail.svg", alt="")
+            a(href="https://www.linkedin.com/in/gabriel-pozo-a6033315b/")
+              img(src="../images/linkedin.svg", alt="")
+            a(href="https://github.com/Willdta")
+              img(src="../images/github.svg", alt="")
 
     footer
       p made with
