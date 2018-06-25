@@ -199,8 +199,13 @@
 }
 @media only screen and (max-width: 380px) {
   #about-section .about-container {
+    grid-template-columns: repeat(1, 312px);
+    grid-template-rows: 550px 500px 400px;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #about-section .about-container {
     grid-template-columns: repeat(1, 250px);
-    grid-template-rows: 600px 500px 400px;
   }
 }
 footer p {
