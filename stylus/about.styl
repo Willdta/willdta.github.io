@@ -15,16 +15,18 @@
 
   .about-container
     display grid
-    grid-auto-columns 420px 420px 420px
+    grid-auto-columns repeat(3, 420px)
     grid-template-rows 420px
-    grid-gap 2em
+    grid-gap 6em
     justify-content center
 
     .about-section
       grid-column 1/2
+      grid-row 1/1
 
     .hobby-section
       grid-column 2/3
+      grid-row 1/1
 
       .hobby-images
         display flex
@@ -48,6 +50,7 @@
 
     .contact-section
       grid-column 3/4
+      grid-row 1/1
       
       .contact-links
         display flex
@@ -100,7 +103,24 @@
 
 // About Section Media Queries //
 
-@media only screen and (max-width 1400px)
+@media only screen and (min-width 1400px)
+  #about-section
+    .about-container
+      grid-template-columns repeat(3, 420px) 
+      grid-template-rows 420px
+
+      .about-section
+        grid-row 1/1
+        grid-column 1/2
+
+      .hobby-section
+        grid-row 1/1
+        grid-column 2/3
+
+        .hobby-images
+          flex-direction row
+
+@media screen and (max-width 1540px)
   #about-section
     .about-container
       grid-template-columns repeat(3, 380px) 
@@ -117,10 +137,6 @@
 
         .hobby-images
           flex-direction row
-          div
-            img
-              height 35px
-              margin 0 15px
 
 @media only screen and (max-width 1350px)
   #about-section
