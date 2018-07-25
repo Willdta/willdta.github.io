@@ -3,14 +3,21 @@ const browserSync = require('browser-sync').create()
 const stylus = require('gulp-stylus')
 const pug = require('gulp-pug')
 const cleanCSS = require('gulp-clean-css')
+const uglify = require('gulp-uglify-es').default
+const rename = require('gulp-rename')
 
-gulp.task('browserSync', ['stylus', 'pug', 'js'], () => {
+gulp.task('serve', ['stylus', 'pug', 'js'], () => {
   browserSync.init({
     server: {
       baseDir: './',
       index: './index.html'
     }
   })
+
+  gulp.watch('./pug/*.pug', ['pug'])
+  gulp.watch('./stylus/*.styl', ['stylus'])
+  gulp.watch('./js/*.js', ['js', 'uglifyJS'])
+  gulp.watch('./*.html').on('change', browserSync.reload)
 })
 
 gulp.task('stylus', () => {
@@ -31,15 +38,14 @@ gulp.task('pug', () => {
 
 gulp.task('js', () => {
   return gulp.src('./js/*.js')
-    .pipe(gulp.dest('./js'))
     .pipe(browserSync.stream())
 })
 
-gulp.task('watch', ['browserSync'], () => {
-  gulp.watch('./pug/*.pug', ['pug'])
-  gulp.watch('./stylus/*.styl', ['stylus'])
-  gulp.watch('./js/*.js', ['js'])
-  gulp.watch('./*.html').on('change', browserSync.reload)
+gulp.task('uglifyJS', () => {
+  return gulp.src('./js/*.js')
+    .pipe(uglify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./dist'))
 })
 
-gulp.task('default', ['stylus', 'pug', 'js', 'watch'])
+gulp.task('default', ['serve', 'stylus', 'pug', 'js', 'uglifyJS'])
