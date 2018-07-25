@@ -2,6 +2,7 @@ const gulp = require('gulp')
 const browserSync = require('browser-sync').create()
 const stylus = require('gulp-stylus')
 const pug = require('gulp-pug')
+const cleanCSS = require('gulp-clean-css')
 
 gulp.task('browserSync', ['stylus', 'pug', 'js'], () => {
   browserSync.init({
@@ -15,6 +16,7 @@ gulp.task('browserSync', ['stylus', 'pug', 'js'], () => {
 gulp.task('stylus', () => {
   return gulp.src('./stylus/*.styl')
     .pipe(stylus())
+    .pipe(cleanCSS())
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.stream())
 })
