@@ -16,6 +16,7 @@ gulp.task('serve', ['stylus', 'pug', 'js'], () => {
 
   gulp.watch('./pug/*.pug', ['pug'])
   gulp.watch('./stylus/*.styl', ['stylus'])
+  gulp.watch('./css/*.css', ['minifyCSS'])
   gulp.watch('./js/*.js', ['js', 'uglifyJS'])
   gulp.watch('./*.html').on('change', browserSync.reload)
 })
@@ -46,6 +47,13 @@ gulp.task('uglifyJS', () => {
     .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('./dist'))
-})
+  })
+  
+  gulp.task('minifyCSS', () => {
+    return gulp.src('./css/*.css')
+      .pipe(rename({ suffix: '.min' }))
+      .pipe(gulp.dest('./dist'))
+      .pipe(browserSync.stream())
+  })
 
-gulp.task('default', ['serve', 'stylus', 'pug', 'js', 'uglifyJS'])
+gulp.task('default', ['serve', 'stylus', 'pug', 'js', 'uglifyJS', 'minifyCSS'])
