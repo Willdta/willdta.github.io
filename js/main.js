@@ -43,4 +43,58 @@ $(() => {
   setTimeout(() => {
     $('#landing-section > ul > li').addClass('toggle-nav')   
   }, 2000)
+
+  // Project Slideshow
+
+  const content = document.querySelectorAll('.child')
+  const next = document.querySelector('.next')
+  const prev = document.querySelector('.prev')
+  let index = 0
+
+  const reset = () => {
+    for (item of content) {
+      item.style.display = 'none'
+      item.style.left = '50%'
+    }
+  }
+
+  const firstImage = () => {
+    reset()
+
+    content[index].style.display = 'block'
+  }
+
+  firstImage()
+
+  const nextImage = () => {
+    reset()
+    content[index + 1].style.display = 'block'
+    content[index + 1].classList.remove('fadeInRight')
+    content[index + 1].classList.add('pulse')
+    index++
+  }
+
+  const prevImage = () => {
+    reset()
+    content[index - 1].style.display = 'block'
+    content[index - 1].classList.remove('fadeInLeft')
+    content[index - 1].classList.add('pulse')
+    index--
+  }
+
+  next.addEventListener('click', () => {
+    if (index === content.length - 1) {
+      index = -1
+    }
+
+    nextImage()
+  })
+
+  prev.addEventListener('click', () => {
+    if (index === 0) {
+      index = content.length
+    }
+
+    prevImage()
+  })
 })

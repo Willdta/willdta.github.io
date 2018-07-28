@@ -4,6 +4,7 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css", rel="stylesheet")
     link(href="../images/favicon.png", rel="shortcut icon" type="image/png")
     link(href="./dist/index.min.css", rel="stylesheet")
     link(href="./dist/landing.min.css", rel="stylesheet")
@@ -114,50 +115,44 @@ html(lang="en")
         h1 work
           .header-border.work-border
 
-      .project-row-container
-        .project-row
-          h4 shopping cart
-          p an ecommerce like app
-          .project-links
-            a(href="https://github.com/Willdta/React-Shopping-Cart")
-              img.github-logo(src="../images/github-logo.svg", alt="")
-            a(href="https://reactshoppingcart1.herokuapp.com/")            
-              img.web-logo(src="../images/internet.svg", alt="")
+      .container
+        .child.first.animated
+          h1 react cart
+          p an application that simulates an ecommerce app. you are allowed to add, delete, edit and view your cart. equipped with email confirmation
+          .link-container
+            a(href="https://github.com/Willdta/React-Shopping-Cart") source code
+            a(href="https://reactshoppingcart1.herokuapp.com/") view live
+
+        .child.second.animated
+          h1 dev social
+          p a social media platfrom built for developers. browse feeds and profiles of other developers
+          .link-container
+            a(href="https://github.com/Willdta/M.E.R.N-Application") source code
+            a(href="https://devsocial123.herokuapp.com/") view live
         
-        .project-row
-          h4 devsocial
-          p social networking for developers
-          .project-links
-            a(href="https://github.com/Willdta/M.E.R.N-Application")           
-              img.github-logo(src="../images/github-logo.svg", alt="")
-            a(href="https://devsocial123.herokuapp.com/")
-              img.web-logo(src="../images/internet.svg", alt="")
+        .child.third.animated
+          h1 expense report
+          p a bank-like application that tracks all your expenses. equipped with full crud capability / filtering
+          .link-container
+            a(href="https://github.com/Willdta/Expense-Report") source code
+            a(href="https://expense-report1234.herokuapp.com/") view live
         
-        .project-row
-          h4 expense report
-          p tracks all your expenses
-          .project-links
-            a(href="https://github.com/Willdta/Expense-Report")            
-              img.github-logo(src="../images/github-logo.svg", alt="")
-            a(href="https://expense-report1234.herokuapp.com/")
-              img.web-logo(src="../images/internet.svg", alt="")
+        .child.fourth.animated
+          h1 hamster ninja
+          p a top down 2d adventure game. play through 3 levels and see if you can defeat the final boss
+          .link-container
+            a(href="https://github.com/yvesandre-middleton/final-project-lhl-ninja-game") source code
+            a(href="http://hamsterninja.ca/") view live
         
-        .project-row
-          h4 hamster ninja
-          p top down 2d adventure game
-          .project-links
-            a(href="https://github.com/yvesandre-middleton/final-project-lhl-ninja-game")
-              img.github-logo(src="../images/github-logo.svg", alt="")
-            a(href="http://hamsterninja.ca/")            
-              img.web-logo(src="../images/internet.svg", alt="")
-        
-        
-        .project-row
-          h4 food-order-app
-          p food ordering with notifications
-          .project-links
-            a(href="https://github.com/ckrac/Lighthouse-midterm_project")       
-              img.github-logo(src="../images/github-logo.svg", alt="")
+        .child.fifth.animated
+          h1 food order app
+          p a restaurant application with online ordering. once your order is complete, you will receive a text 
+          .link-container
+            a(href="https://github.com/ckrac/Lighthouse-midterm_project") source code
+
+        .button-container
+          button.prev.slide-button prev
+          button.next.slide-button next
       
     //- About Section
 
