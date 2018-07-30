@@ -15,16 +15,16 @@
   .container
     position relative
     height 600px
-    width 400px
+    width 384px
     left 50%
     transform translateX(-50%)
 
     .child
       height 600px
-      width 400px
+      width 384px
       display inline-block
       margin 0 auto
-      box-shadow 0 0 10px 0 rgba(0, 0, 0, 0.1)
+      box-shadow 0 0 20px 0 rgba(0, 0, 0, 0.1)
       border-radius 5px
 
       h1
@@ -35,7 +35,7 @@
         top 30px
         font-weight 300
 
-      h1::after
+      h1:after
         content ''
         position absolute
         height 1px
@@ -72,7 +72,7 @@
           position relative
           color black
 
-        a::after
+        a:after
           height 1px
           width 0%
           position absolute
@@ -82,7 +82,7 @@
           background $pink
           transition width 250ms ease
 
-        a:hover::after
+        a:hover:after
           width 100%
 
     .button-container
@@ -104,21 +104,21 @@
       .prev
         border-top-left-radius 20px
 
-@media screen and (max-width 500px)
+@media screen and (max-width 450px)
   #project-section
     .container
-      width 300px
+      width 312px
       
       .child
-        width 300px
+        width 312px
 
-@media screen and (max-width 370px)
+@media screen and (max-width 340px)
   #project-section
     .container
-      width 250px
+      width 252px
     
       .child
-        width 250px
+        width 252px
 
         p
           width 80%
