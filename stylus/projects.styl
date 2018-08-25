@@ -3,23 +3,14 @@
 // Project Section Styling //
 
 #project-section
-  height 100%
   background $blue
-  margin-top 100px
-  
-  h1
-    color white
-    border-bottom 3px solid white
 
-  h1:before
-    color $pink
-  
-  h3
-    span
-      color $pink
+  h1
+    position relative
+    top 100px
 
   .project-container 
-    height 950px
+    height 1050px
     position relative
 
     .child
@@ -31,7 +22,7 @@
       position absolute
       transform translate(-50%, -50%)
       transition all 200ms cubic-bezier(.51, .92, .24, 1.15)
-      top 400px
+      top 500px
       width 384px
       padding 0 50px
       border-radius 25px
@@ -42,6 +33,7 @@
         font-weight $medium
         position relative
         padding 0
+        top 0
 
         &:after
           content ''
@@ -141,3 +133,4 @@
 
         .link-container a
           margin 0 7px
+          font-size 14px

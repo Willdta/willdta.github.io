@@ -89,9 +89,8 @@ body
 // Header Styling //
 
 #skills-section, #project-section, #about-section
-  .header-container
-    margin-bottom 100px
-    
+    margin 100px 0
+  .header-container    
     h1
       font-size 40px
       font-weight $medium
@@ -99,33 +98,16 @@ body
       display inline-block
       position relative
       left 50%
-      top 100px
       transform translateX(-50%)
-        
-      // .header-border
-      //   position absolute
-      //   width 100%
-      //   height 1px
-      //   top -5px
-      //   left 0
 
-      .tools-border
-        background $green
-      
-      .work-border
-        background $pink
-      
-      .about-border
-        background $blue
-    
-  h3 
-    font-size 30px
-    color $grey
-    font-weight $regular
-    text-align center
-    padding-bottom 100px
-    padding-right 10px
-    padding-left 10px
+    .tools-border, .about-border
+      border-bottom 3px solid $blue
+      color $blue
+      margin-bottom 100px
+        
+    .work-border
+      border-bottom 3px solid white
+      color white
 
 // Header Media Queries //
 
