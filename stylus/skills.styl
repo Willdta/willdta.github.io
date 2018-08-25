@@ -5,6 +5,14 @@
 #skills-section
   height 100%
 
+  h1
+    color $blue
+    margin-bottom 100px
+    border-bottom 3px solid $blue
+    // padding 10px 50px
+    // background $blue
+    // border-radius 50px
+
   h1:before
     color $green
 
@@ -17,12 +25,12 @@
     height 100%
     grid-template-columns repeat(4, 180px)
     grid-template-rows repeat(4, 180px)
-    grid-gap 5em
+    grid-gap 7em
     justify-content center
     align-content center
 
     div
-      box-shadow 0 0 20px 0 rgba(0,0,0,0.1)
+      box-shadow 0 0 5px 0 rgba(0, 0, 0, 0.1px)
       display flex
       justify-content center
       align-items center
@@ -31,6 +39,7 @@
       &:hover .skill-info
         opacity 1
         height 35px
+        box-shadow none
 
       img
         height 70px
@@ -43,10 +52,10 @@
         height 0px
         opacity 0
         transition 250ms all cubic-bezier(0.64, 0.57, 0.67, 1.53)
-        background white
+        border none
         
         p
-          color black
+          color $grey
 
 // Skills Section Media Queries //
 
@@ -61,7 +70,7 @@
     .skills-container
       grid-template-columns repeat(2, 160px)
       grid-template-rows repeat(8, 160px)
-      grid-gap 4em
+      grid-gap 5.5em
 
 @media only screen and (max-width 800px)
   #skills-section    
@@ -69,7 +78,7 @@
       .skills-row 
           p
             font-size 15px
-            padding 50px 36px
+            // padding 50px 36px
 
 @media only screen and (max-width 500px)
   #skills-section

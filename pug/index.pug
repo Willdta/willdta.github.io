@@ -128,44 +128,40 @@ html(lang="en")
         h1 work
           .header-border.work-border
 
-      .container
-        .child.first.animated
-          h1 react cart
+      .project-container
+        .child.first
+          h1.project-header react cart
           p an application that simulates an ecommerce app. you are allowed to add, delete, edit and view your cart. equipped with email confirmation
           .link-container
             a(href="https://github.com/Willdta/React-Shopping-Cart") source code
             a(href="https://reactshoppingcart1.herokuapp.com/") view live
 
-        .child.second.animated
-          h1 dev social
+        .child.second
+          h1.project-header dev social
           p a social media platfrom built for developers. browse feeds and profiles of other developers
           .link-container
             a(href="https://github.com/Willdta/M.E.R.N-Application") source code
             a(href="https://devsocial123.herokuapp.com/") view live
         
-        .child.third.animated
-          h1 expense report
+        .child.third
+          h1.project-header expense report
           p a bank-like application that tracks all your expenses. equipped with full crud capability / filtering
           .link-container
             a(href="https://github.com/Willdta/Expense-Report") source code
             a(href="https://expense-report1234.herokuapp.com/") view live
         
-        .child.fourth.animated
-          h1 hamster ninja
+        .child.fourth
+          h1.project-header hamster ninja
           p a top down 2d adventure game. play through 3 levels and see if you can defeat the final boss
           .link-container
             a(href="https://github.com/yvesandre-middleton/final-project-lhl-ninja-game") source code
             a(href="http://hamsterninja.ca/") view live
-        
-        .child.fifth.animated
-          h1 food order app
-          p a restaurant application with online ordering. once your order is complete, you will receive a text 
-          .link-container
-            a(href="https://github.com/ckrac/Lighthouse-midterm_project") source code
 
         .button-container
-          button.prev.slide-button prev
-          button.next.slide-button next
+          .prev
+            img(src="../images/back.svg", alt="")
+          .next
+            img(src="../images/next.svg", alt="")
       
     //- About Section
 
@@ -173,58 +169,17 @@ html(lang="en")
       .header-container
         h1 about
           .header-border.about-border
-
+        
       .about-container
-        .about-section.about-grid
-          h2 i'm...
-          .image-info
-          img.image-info(src="../images/boy.svg", alt="")
-          p gabriel pozo. a front end developer with a passion for minimalism. i believe that the simpler the message, the easier it is to convey
+        img(src="../images/boy-blue.svg", alt="")
 
-        .hobby-section.about-grid
-          h2 i enjoy...
-          .image-info
-          img.image-info(src="../images/puzzle.svg", alt="")
-          .hobby-images
-            div
-              img(src="../images/tennis-ball.svg", alt="")
-              p tennis
-            div
-              img(src="../images/strong.svg", alt="")
-              p fitness
-            div
-              img(src="../images/dog.svg", alt="")
-              p dogs
-            div  
-              img(src="../images/netflix.svg", alt="")
-              p netflix
-            div  
-              img(src="../images/hiker.svg", alt="")
-              p hiking
+        p hello, nice to meet you. thank you for taking the time to visit my personal site. liked what you see? i hope you did. anyways here's a little about myself. i love creating unqiue and minimal interfaces, like this site. i'm in love with the font quicksand, fitness, tv shows (you name it i've seen it),and everything animals (especially dogs). want to get in touch? just click the mail icon!
 
-        .contact-section.about-grid
-          h2 connect...
-          .image-info
-          img.image-info(src="../images/network.svg", alt="")
-          .contact-links
-            a(href="mailto:gpozo@me.com")
-              img(src="../images/gmail.svg", alt="")
-            a(href="https://www.linkedin.com/in/gabriel-pozo-a6033315b/")
-              img(src="../images/linkedin.svg", alt="")
-            a(href="https://github.com/Willdta")
-              img(src="../images/github.svg", alt="")
-
-    //- footer
-    //-   p made with
-    //-     img(src="../images/heart.svg")
-    //-     | and
-    //-     a(href="https://www.flaticon.com/")
-    //-       span flaticon
-    //-     | and
-    //-     img(src="../images/pug.svg")
-    //-     | and
-    //-     img(src="../images/stylus_icon.svg", alt="")
-    //-     | by gabriel pozo
+        .contact-links
+          a(href="mailto:gpozo@me.com" title="email")
+            img(src="../images/envelope.svg", alt="")
+          //- a(href="https://www.linkedin.com/in/gabriel-pozo-a6033315b/") 
+          //-   img(src="../images/linkedin-logo.svg", alt="" title="linkedIn")
 
   script(
   src="https://code.jquery.com/jquery-3.3.1.min.js"
